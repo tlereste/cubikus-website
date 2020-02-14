@@ -111,7 +111,7 @@ dateFormatToUse = "2006-01-02"
   # site keywords
   keywords = ["Theme", "Hugo"]
   # site default theme ("light", "dark", "auto")
-  defaultTheme = "auto"
+  defaultTheme = "dark"
 
   # Home Page Info
   ##home mode ("post", "other")
