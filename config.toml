@@ -6,7 +6,7 @@ defaultContentLanguage = "en"
 # website title
 title = "Cubikus site"
 # theme
-theme = "LoveIt"
+theme = "loveit"
 # whether to use git commit log to generate lastmod record
 enableGitInfo = false
 # whether to include chinese/japanese/korean
