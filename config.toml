@@ -192,15 +192,8 @@ dateFormatToUse = "2006-01-02"
   [params.share]
     enable = true
     Twitter = true
-    Facebook = true
-    Reddit = true
     Linkedin = true
-    #Pinterest = true
     HackerNews = true
-    #Mix = true
-    #Tumblr = true
-    #VKontakte = true
-    #Weibo = true
 
   # Publisher Info just for SEO
   [params.publisher]
