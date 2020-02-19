@@ -1,0 +1,8 @@
+{
+    "name": "cubikus",
+    "short_name": "cubikus",
+    "icons": [],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
