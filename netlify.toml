@@ -41,7 +41,6 @@ HUGO_ENABLEGITINFO = "true"
   for = "/*.js"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
-    [[headers]]
 
 [[headers]]
   for = "/*"
@@ -50,6 +49,7 @@ HUGO_ENABLEGITINFO = "true"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Cache-Control = "max-age=604800, public"
     Content-Security-Policy = "form-action https:"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Feature-Policy = "vibrate 'none'; geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'none'; payment 'none'"
