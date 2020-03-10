@@ -4,7 +4,7 @@ defaultContentLanguage = "en"
 # theme
 theme = "loveit"
 # themes directory
-themesDir = "."
+themesDir = "themes"
 
 # whether to use robots.txt
 enableRobotsTXT = true
