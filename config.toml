@@ -1,28 +1,256 @@
 baseURL = "https://www.cubikus.fr/"
-# website language
-languageCode = "en"
-# [en, zh, ...] determines which i18n file to use
+# [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
-# website title
-title = "thibault.lereste@cubikus:$"
 # theme
 theme = "loveit"
-# whether to use git commit log to generate lastmod record
-enableGitInfo = false
-# whether to include chinese/japanese/korean
-hasCJKLanguage = false
-# default amount of posts in each pages
-paginate = 12
-# whether to use emoji code
-enableEmoji = true
+# themes directory
+themesDir = "."
+
 # whether to use robots.txt
 enableRobotsTXT = true
-# [UA-XXXXXXXX-X] google analytics code
-googleAnalytics = "UA-158604605-1"
-# copyright description used only for seo schema
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-# date format
-dateFormatToUse = "2006-01-02"
+# whether to use git commit log
+enableGitInfo = false
+# whether to use emoji code
+enableEmoji = true
+
+[languages]
+  [languages.en]
+    weight = 1
+    # language code
+    languageCode = "en"
+    # website title
+    title = "thibault.lereste@cubikus:$"
+    # language name
+    languageName = "English"
+    # whether to include Chinese/Japanese/Korean
+    hasCJKLanguage = false
+    # default amount of posts in each pages
+    paginate = 12
+    # [UA-XXXXXXXX-X] google analytics code
+    googleAnalytics = "UA-158604605-1"
+    # copyright description used only for seo schema
+    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+    # date format
+    dateFormatToUse = "2006-01-02"
+    # Menu Info
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        # you can add extra information before the name (HTML format is allowed), such as icons
+        pre = ""
+        name = "Posts"
+        url = "/posts/"
+        # title will be shown when you hover on this menu link.
+        title = ""
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        pre = ""
+        name = "Tags"
+        url = "/tags/"
+        title = ""
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "categories"
+        pre = ""
+        name = "Categories"
+        url = "/categories/"
+        title = ""
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = "documentation"
+        pre = ""
+        name = "Documentation"
+        url = "/categories/documentation/"
+        title = ""
+        weight = 4
+      [[languages.en.menu.main]]
+        identifier = "about"
+        pre = ""
+        name = "About"
+        url = "/about/"
+        title = ""
+        weight = 5
+      [languages.en.params]
+        # site description
+        description = "About LoveIt Theme"
+        # site keywords
+        keywords = ["Theme", "Hugo"]
+        # site default theme ("light", "dark", "auto")
+        defaultTheme = "dark"
+        # Home Page Info
+        [languages.en.params.home]
+          # Home Page Profile
+          [languages.en.params.home.profile]
+            enable = true
+            # Gravatar Email for preferred avatar in home page
+            gravatarEmail = ""
+            # URL of avatar shown in home page
+            avatarURL = "/images/avatar.png"
+            # subtitle shown in home page
+            subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+            # whether to use typeit animation for subtitle
+            typeit = false
+            # whether to show social links
+            social = true
+          # Home Page Posts
+          [languages.en.params.home.posts]
+            enable = true
+            # special amount of posts in each home posts page
+            paginate = 6
+            # default behavior when you don't set "hiddenFromHomePage" in front matter
+            defaultHiddenFromHomePage = false
+        # Social Info in home page
+        [languages.en.params.social]
+          GitHub = "tlereste"
+          Linkedin = "thibaultlereste"
+          Twitter = "thibaultlereste"
+          Email = "lereste.thibault@gmail.com"
+        # Social Share Links in post page
+        [languages.en.params.share]
+          enable = true
+          Twitter = true
+          Linkedin = true
+        # Comment Config
+        [languages.en.params.comment]
+          enable = true
+          # Disqus Comment Config (https://disqus.com/)
+          [languages.en.params.comment.disqus]
+            # Disqus shortname to use Disqus in posts
+            shortname = "cubikus-fr"
+          # Gitalk Comment Config (https://github.com/gitalk/gitalk)
+          [languages.en.params.comment.gitalk]
+            owner = ""
+            repo = ""
+            clientId = ""
+            clientSecret = ""
+          # Valine Comment Config (https://github.com/xCss/Valine)
+          [languages.en.params.comment.valine]
+            enable = false
+            appId = ""
+            appKey = ""
+            placeholder = "Your comment ..."
+            notify = false
+            verify = true
+            avatar = "mp"
+            meta= ""
+            pageSize = 10
+            lang = "en"
+            visitor = true
+            recordIP = true
+          # Facebook Comment Config (https://developers.facebook.com/docs/plugins/comments)
+          [languages.en.params.comment.facebook]
+            enable = false
+            width = "100%"
+            numPosts = 10
+            appId = ""
+            languageCode = "en_US"
+
+[params]
+  # LoveIt theme version
+  version = "0.1.2"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = "https://github.com/dillonzq/LoveIt"
+  # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
+  fingerprint = ""
+  # Header info
+  [params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+  # Footer Copyright Info
+  [params.footer]
+    # Site creation time
+    since = 2020
+    # ICP info only in China (HTML format is allowed)
+    icp = ""
+    # license info (HTML format is allowed)
+    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  # Page config
+  [params.page]
+    # whether to use lightgallery in the page
+    lightgallery = true
+    # whether to show link to Raw Markdown content of the post
+    linkToMarkdown = true
+  # mathematical formulas (KaTeX https://katex.org/)
+  [params.math]
+    enable = true
+    # default block delimiter is $$ ... $$ and \\[ ... \\]
+    blockLeftDelimiter = ""
+    blockRightDelimiter = ""
+    # default inline delimiter is $ ... $ and \\( ... \\)
+    inlineLeftDelimiter = ""
+    inlineRightDelimiter = ""
+    # KaTeX extension copy_tex
+    copyTex = true
+    # KaTeX extension mhchem
+    mhchem = true
+  # site verification code for Google/Bing/Yandex/Pinterest/Baidu
+  [params.verification]
+    google = ""
+    bing = ""
+    yandex = ""
+    pinterest = ""
+    baidu = ""
+  # Publisher Info just for SEO
+  [params.publisher]
+    name = "xxxx"
+    [params.publisher.logo]
+      url = "logo.png"
+      width = 127
+      height = 40
+  # Website Log Info just for SEO
+  [params.logo]
+    url = "logo.png"
+    width = 127
+    height = 40
+  # Website Image Info just for SEO
+  [params.image]
+    url = "cover.png"
+    width = 800
+    height = 600
+  # CSS and JS Files CDN
+  [params.cdn]
+    # fontawesome-free@5.12.1 https://fontawesome.com/
+    fontawesomeFreeCSS = ''
+    # animate.css@3.7.2 https://github.com/daneden/animate.css
+    animateCSS = ''
+    # smooth-scroll@16.1.2 https://github.com/cferdinandi/smooth-scroll
+    smoothScrollJS = ''
+    # sharer@0.4.0 https://github.com/ellisonleao/sharer.js
+    sharerJS = ''
+    # lazysizes@5.2.0 https://github.com/aFarkas/lazysizes
+    lazysizesJS = ''
+    # lightgallery@1.1.3 lg-thumbnail@1.1.0 lg-zoom@1.1.0 https://github.com/sachinchoolur/lightgallery.js
+    lightgalleryCSS = ''
+    lightgalleryJS = ''
+    lightgalleryThumbnailJS = ''
+    lightgalleryZoomJS = ''
+    # typeit@6.5.1 https://github.com/alexmacarthur/typeit
+    typeitJS = ''
+    # katex@0.11.1 https://github.com/KaTeX/KaTeX
+    katexCSS = ''
+    katexJS = ''
+    katexAutoRenderJS = ''
+    katexCopyTexCSS = ''
+    katexCopyTexJS = ''
+    katexMhchemJS = ''
+    # mermaid@8.4.8 https://github.com/knsv/mermaid
+    mermaidJS = ''
+    # aplayer@1.10.1 https://github.com/MoePlayer/APlayer
+    aplayerCSS = ''
+    aplayerJS = ''
+    # meting@2.0.1 https://github.com/metowolf/MetingJS
+    metingJS = ''
+    # echarts@4.6.0 https://echarts.apache.org/
+    echartsJS = ''
+    echartsMacaronsJS = ''
+    # gitalk@1.6.2 https://github.com/gitalk/gitalk
+    gitalkCSS = ''
+    gitalkJS = ''
+    # valine@1.3.10 https://valine.js.org/
+    valineJS = ''
 
 # Markup related configuration in Hugo
 [markup]
@@ -68,186 +296,6 @@ dateFormatToUse = "2006-01-02"
 # Permalinks Info (https://gohugo.io/content-management/urls/#permalinks)
 [Permalinks]
   posts = ":year/:month/:filename"
-
-# Menu Info
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "posts"
-    weight = 1
-
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "tags"
-    weight = 2
-
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "categories"
-    weight = 3
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "about"
-    weight = 4
-
-[params]
-  # LoveIt theme version
-  version = "0.1.X"
-  # site description
-  description = "About LoveIt Theme"
-  # site keywords
-  keywords = ["Theme", "Hugo"]
-  # site default theme ("light", "dark", "auto")
-  defaultTheme = "dark"
-
-  # Home Page Info
-  ##home mode ("post", "other")
-  home_mode = "post"
-  ## special amount of posts in each home post page
-  home_paginate = 6
-  ## URL of avatar shown in home page
-  avatar = "images/avatar.png"
-  ## subtitle shown in home page
-  subtitle = "A Clean, Elegant but Advanced Hugo Theme"
-
-  # whether to show social share links in post page
-  socialShare = true
-
-  # Footer CopyRight Info
-  ## Site creation time
-  since = 2020
-  ## ICP info only in China (HTML format is allowed)
-  icp = ""
-  ## license info (HTML format is allowed)
-  license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-
-  # public git repo url to link lastmod git commit only then enableGitInfo is true
-  gitRepo = ""
-
-  # mathematical formulas (KaTeX)
-  [params.math]
-    enable = true
-    block_left_delimiter = ""
-    block_right_delimiter = ""
-    inline_left_delimiter = "$"
-    inline_right_delimiter = "$"
-    # KaTeX extension copy_tex
-    copy_tex = true
-    # KaTeX extension mhchem
-    mhchem = true
-
-  # whether to show link to Raw Markdown content of the post
-  linkToMarkdown = true
-
-  # site verification code for Google/Bing/Yandex/Pinterest/Baidu
-  google_verification = ""
-  bing_verification = ""
-  yandex_verification = ""
-  pinterest_verification = ""
-  baidu_verification = ""
-
-  # CSS and JS Files CDN
-  [params.cdn]
-    ## for example '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css" integrity="sha256-fdcFNFiBMrNfWL6OcAGQz6jDgNTRxnrLEd4vJYFWScE=" crossorigin="anonymous">'
-    fontawesome_free_css = ''
-    animate_css = ''
-    gitalk_css = ''
-    gitalk_js = ''
-    valine_js = ''
-    jquery_js = ''
-    lazysizes_js = ''
-    smooth_scroll_js = ''
-    katex_css = ''
-    katex_js = ''
-    katex_auto_render_js = ''
-    katex_copy_tex_css = ''
-    katex_copy_tex_js = ''
-    katex_mhchem_js = ''
-    mermaid_js = ''
-    echarts_js = ''
-    echarts_macarons_js = ''
-    typeit_js = ''
-    jquery_countdown_js = ''
-    aplayer_css = ''
-    aplayer_js = ''
-    meting_js = ''
-
-  # Gravatar Info for preferred avatar in home page
-  [params.gravatar]
-    email = ""
-
-  # Social Info in home page
-  [params.social]
-    GitHub = "tlereste"
-    Linkedin = "thibaultlereste"
-    Twitter = "thibaultlereste"
-    Email = "lereste.thibault@gmail.com"
-
-  # Social Share Links in post page
-  [params.share]
-    enable = true
-    Twitter = true
-    Linkedin = true
-    HackerNews = true
-
-  # Publisher Info just for SEO
-  [params.publisher]
-    name = "xxxx"
-    [params.publisher.logo]
-      url = "logo.png"
-      width = 127
-      height = 40
-
-  # Website Log Info just for SEO
-  [params.logo]
-    url = "logo.png"
-    width = 127
-    height = 40
-
-  # Website Image Info just for SEO
-  [params.image]
-    url = "cover.png"
-    width = 800
-    height = 600
-
-  # Disqus Comment Config (https://disqus.com/)
-  [params.disqus]
-    # Disqus shortname to use Disqus in posts
-    shortname = "cubikus-fr"
-
-  # Gittalk Comment Config (https://github.com/gitalk/gitalk)
-  [params.gitalk]
-    owner = ""
-    repo = ""
-    clientId = ""
-    clientSecret = ""
-
-  # Valine Comment Config (https://github.com/xCss/Valine)
-  [params.valine]
-    enable = false
-    appId = ""
-    appKey = ""
-    placeholder = "Your comment ..."
-    notify = false
-    verify = true
-    avatar = "mp"
-    #meta= ""
-    pageSize = 10
-    visitor = true
-    recordIP = true
-
-  # Facebook Comment Config (https://developers.facebook.com/docs/plugins/comments)
-  [params.facebook]
-    enable = false
-    width = "100%"
-    numPosts = 10
-    appId = ""
-    languageCode = "en_US"
 
 # Privacy Info (https://gohugo.io/about/hugo-and-gdpr/)
 [privacy]
