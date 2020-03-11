@@ -8,7 +8,6 @@ theme = "loveit"
 enableRobotsTXT = true
 # whether to use git commit log
 enableGitInfo = false
-GitInfo = false
 # whether to use emoji code
 enableEmoji = true
 
@@ -151,7 +150,7 @@ enableEmoji = true
   # LoveIt theme version
   version = "0.1.X"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/dillonzq/LoveIt"
+  gitRepo = ""
   # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
   # Header info
