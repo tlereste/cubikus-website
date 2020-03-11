@@ -8,6 +8,7 @@ theme = "loveit"
 enableRobotsTXT = true
 # whether to use git commit log
 enableGitInfo = false
+GitInfo = false
 # whether to use emoji code
 enableEmoji = true
 
@@ -172,7 +173,7 @@ enableEmoji = true
     # whether to use lightgallery in the page
     lightgallery = true
     # whether to show link to Raw Markdown content of the post
-    linkToMarkdown = true
+    linkToMarkdown = false
   # mathematical formulas (KaTeX https://katex.org/)
   [params.math]
     enable = true
