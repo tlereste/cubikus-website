@@ -1,4 +1,4 @@
-baseURL = "https://www.cubikus.fr/"
+baseURL = "https://thibault-lereste.fr/"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
 # theme
@@ -17,7 +17,7 @@ enableEmoji = true
     # language code
     languageCode = "en"
     # website title
-    title = "thibault.lereste@cubikus:$"
+    title = "Thibault Le Reste"
     # language name
     languageName = "English"
     # whether to include Chinese/Japanese/Korean
@@ -116,7 +116,7 @@ enableEmoji = true
           [languages.en.params.comment.disqus]
             enable = true
             # Disqus shortname to use Disqus in posts
-            shortname = "cubikus-fr"
+            shortname = "thibault-lereste-fr"
           # Gitalk Comment Config (https://github.com/gitalk/gitalk)
           [languages.en.params.comment.gitalk]
             enable = false
