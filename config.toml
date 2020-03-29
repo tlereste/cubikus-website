@@ -29,7 +29,7 @@ enableEmoji = true
     # copyright description used only for seo schema
     copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
     # date format
-    dateFormatToUse = "01-02-2006"
+    dateFormatToUse = "02-01-2006"
     # Menu Info
     [languages.fr.menu]
       [[languages.fr.menu.main]]
