@@ -3,6 +3,8 @@ baseURL = "https://thibault-lereste.fr/"
 defaultContentLanguage = "fr"
 # theme
 theme = "loveit"
+# multilingual
+isMultilingual = false
 
 # whether to use robots.txt
 enableRobotsTXT = true
