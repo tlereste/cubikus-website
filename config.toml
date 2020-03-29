@@ -1,6 +1,6 @@
 baseURL = "https://thibault-lereste.fr/"
 # [en, zh-cn, fr, ...] determines default content language
-defaultContentLanguage = "en"
+defaultContentLanguage = "fr"
 # theme
 theme = "loveit"
 
@@ -12,14 +12,14 @@ enableGitInfo = false
 enableEmoji = true
 
 [languages]
-  [languages.en]
+  [languages.fr]
     weight = 1
     # language code
-    languageCode = "en"
+    languageCode = "fr"
     # website title
     title = "Thibault Le Reste"
     # language name
-    languageName = "English"
+    languageName = "French"
     # whether to include Chinese/Japanese/Korean
     hasCJKLanguage = false
     # default amount of posts in each pages
@@ -29,10 +29,10 @@ enableEmoji = true
     # copyright description used only for seo schema
     copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
     # date format
-    dateFormatToUse = "2006-01-02"
+    dateFormatToUse = "01-02-2006"
     # Menu Info
-    [languages.en.menu]
-      [[languages.en.menu.main]]
+    [languages.fr.menu]
+      [[languages.fr.menu.main]]
         identifier = "posts"
         # you can add extra information before the name (HTML format is allowed), such as icons
         pre = ""
@@ -41,28 +41,28 @@ enableEmoji = true
         # title will be shown when you hover on this menu link.
         title = ""
         weight = 1
-      [[languages.en.menu.main]]
+      [[languages.fr.menu.main]]
         identifier = "tags"
         pre = ""
         name = "Tags"
         url = "/tags/"
         title = ""
         weight = 2
-      [[languages.en.menu.main]]
+      [[languages.fr.menu.main]]
         identifier = "categories"
         pre = ""
         name = "Categories"
         url = "/categories/"
         title = ""
         weight = 3
-      [[languages.en.menu.main]]
+      [[languages.fr.menu.main]]
         identifier = "about"
         pre = ""
         name = "About"
         url = "/about/"
         title = ""
         weight = 4
-      [languages.en.params]
+      [languages.fr.params]
         # site description
         description = "About LoveIt Theme"
         # site keywords
@@ -70,9 +70,9 @@ enableEmoji = true
         # site default theme ("light", "dark", "auto")
         defaultTheme = "dark"
         # Home Page Info
-        [languages.en.params.home]
+        [languages.fr.params.home]
           # Home Page Profile
-          [languages.en.params.home.profile]
+          [languages.fr.params.home.profile]
             enable = true
             # Gravatar Email for preferred avatar in home page
             gravatarEmail = ""
@@ -85,28 +85,28 @@ enableEmoji = true
             # whether to show social links
             social = true
           # Home Page Posts
-          [languages.en.params.home.posts]
+          [languages.fr.params.home.posts]
             enable = true
             # special amount of posts in each home posts page
             paginate = 6
             # default behavior when you don't set "hiddenFromHomePage" in front matter
             defaultHiddenFromHomePage = false
         # Social Info in home page
-        [languages.en.params.social]
+        [languages.fr.params.social]
           GitHub = "tlereste"
           Linkedin = "thibaultlereste"
           Twitter = "thibaultlereste"
           Email = "lereste.thibault@gmail.com"
         # Social Share Links in post page
-        [languages.en.params.share]
+        [languages.fr.params.share]
           enable = true
           Twitter = true
           Linkedin = true
         # Comment Config
-        [languages.en.params.comment]
+        [languages.fr.params.comment]
           enable = true
           # Disqus Comment Config (https://disqus.com/)
-          [languages.en.params.comment.disqus]
+          [languages.fr.params.comment.disqus]
             enable = true
             # Disqus shortname to use Disqus in posts
             shortname = "thibault-lereste-fr"
@@ -114,10 +114,10 @@ enableEmoji = true
           [languages.en.params.comment.gitalk]
             enable = false
           # Valine Comment Config (https://github.com/xCss/Valine)
-          [languages.en.params.comment.valine]
+          [languages.fr.params.comment.valine]
             enable = false
           # Facebook Comment Config (https://developers.facebook.com/docs/plugins/comments)
-          [languages.en.params.comment.facebook]
+          [languages.fr.params.comment.facebook]
             enable = false
 
 [params]
