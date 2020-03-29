@@ -19,7 +19,7 @@ enableEmoji = true
     # website title
     title = "Thibault Le Reste"
     # language name
-    languageName = "Français"
+    languageName = "French"
     # whether to include Chinese/Japanese/Korean
     hasCJKLanguage = false
     # default amount of posts in each pages
