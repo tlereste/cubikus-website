@@ -49,15 +49,15 @@ enableEmoji = true
         title = ""
         weight = 2
       [[languages.fr.menu.main]]
-        identifier = "about"
+        identifier = "a-propos"
         pre = ""
-        name = "About"
-        url = "/about/"
+        name = "A propos"
+        url = "/a-propros/"
         title = ""
         weight = 3
       [languages.fr.params]
         # site description
-        description = "About LoveIt Theme"
+        description = "Site personel de Thibault Le Reste, freelance breton expatrié à Bordeaux, ex développeur JAVA passé du coté obscur de l'infrastructure"
         # site keywords
         keywords = ["Theme", "Hugo"]
         # site default theme ("light", "dark", "auto")
@@ -72,7 +72,7 @@ enableEmoji = true
             # URL of avatar shown in home page
             avatarURL = "/images/avatar.png"
             # subtitle shown in home page
-            subtitle = "Tech, infra, code et plus..."
+            subtitle = "Breton expatrié à Bordeaux, ex développeur JAVA passé du coté obscur de l'infrastructure"
             # whether to use typeit animation for subtitle
             typeit = false
             # whether to show social links
