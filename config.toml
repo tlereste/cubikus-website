@@ -52,7 +52,7 @@ enableEmoji = true
         identifier = "a-propos"
         pre = ""
         name = "A propos"
-        url = "/a-propros/"
+        url = "/a-propos/"
         title = ""
         weight = 3
       [languages.fr.params]
