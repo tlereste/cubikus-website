@@ -2,6 +2,8 @@
 title: "Désinfecter votre cluster Kubernetes avec Popeye !"
 date: 2020-04-02T16:00:00+01:00
 draft: false
+
+featuredImage: "/images/kubernetes-popeye/kubernetes-popeye-featured.png"
 ---
 
 # Désinfecter votre cluster Kubernetes avec Popeye !
@@ -137,7 +139,7 @@ La dernière version de Popeye remonte plus d'informations sur plus de resources
  
 ### Cluster avec un score D  
 
-![cluster score d](images/d_score.png)
+![cluster score d](images/kubernetes-popeye/d_score.png)
 
 Ici, des recommandations sont remontées concernant les Pods :  
 - pas de resource limits définies
@@ -147,7 +149,7 @@ Ici, des recommandations sont remontées concernant les Pods :
 
 ### Cluster avec un score A  
 
-![cluster score a](images/a_score.png)
+![cluster score a](images/kubernetes-popeye/a_score.png)
  
  
 Voici quelques options à passer à votre commande `kubectl popeye` :
