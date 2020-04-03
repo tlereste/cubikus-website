@@ -3,6 +3,8 @@ title: "Désinfecter votre cluster Kubernetes avec Popeye !"
 date: 2020-04-02T16:00:00+01:00
 draft: false
 
+tags: ["kubernetes", "tool"]
+
 toc: true
 
 featuredImage: "/images/kubernetes-popeye/kubernetes-popeye-featured.png"
