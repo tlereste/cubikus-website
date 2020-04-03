@@ -149,7 +149,7 @@ Ici, des recommandations sont remontées concernant les **Pods** :
 - utilisation d'une image taggée **latest**  
 - ...
 
-{{< admonition tip "Conseil" true >}}
+{{< admonition tip "Conseil" >}}
 L'utilisation d'une image taggée **latest** est un [anti-pattern](https://vsupalov.com/docker-latest-tag/).
 {{< /admonition >}}
 
