@@ -178,7 +178,7 @@ Si vous avez plus de temps et d'envie, voici quelques cas d'utilisation plus pou
 De mon côté, les couleurs ne s'affichaient pas dans le terminal.  
 Afin de corriger ce souci, j'ai soumis une [pull request](https://github.com/derailed/popeye/pull/89) qui résoud désormais ce problème.  
 
-Si les emojis reste en noir et blanc, je vous conseille d'installer la police [Noto Color Emoji](https://www.google.com/get/noto/help/install). 
+Si les emojis reste en noir et blanc, vous pouvez installer la police [Noto Color Emoji](https://www.google.com/get/noto/help/install). 
 
 ## Convaincu ?
 
