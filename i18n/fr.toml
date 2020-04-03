@@ -1,0 +1,13 @@
+# === Taxonomy ===
+[allSome]
+other = "Tous les %s"
+
+[tag]
+other = "Tag"
+
+[tags]
+other = "Tags"
+
+# === posts/single.html ===
+[contents]
+other = "Plan"
