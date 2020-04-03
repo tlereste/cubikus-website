@@ -75,7 +75,7 @@ Ensuite, installer le plugin Popeye :
 kubectl krew install popeye
 ```
 
-Puis, lancer la commande `kubectl popeye version` afin de vérifier l'installation.
+Puis, lancer la commande `kubectl popeye version` pour vérifier l'installation.
 
 ## Utilisation de l'outil Popeye  
 
@@ -155,7 +155,7 @@ L'utilisation d'une image taggée **latest** est un [anti-pattern](https://vsupa
 
 ![cluster score a](images/kubernetes-popeye/a_score.png)
  
- 
+  
 Voici quelques options à passer à votre commande `kubectl popeye` :
 - `--kubeconfig` pour spécifier un autre fichier de configuration kubeconfig  
  - `-n` pour spéficier le namespace sur lequel effectuer le scan  
