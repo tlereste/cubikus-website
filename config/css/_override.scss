@@ -2,8 +2,6 @@
 // Override Variables
 // ==============================
 
-$global-font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft Yahei UI, Segoe UI, Helvetica, Arial, sans-serif, Segoe UI Emoji !default;
-
 html {
-    font-family:-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei UI,Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji;font-size:16px;font-weight:400;line-height:1.5rem;width:100%
+    font-family:-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei UI,Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji !default;
 }
