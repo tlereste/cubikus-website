@@ -2,17 +2,22 @@
 title: "Désinfecter votre cluster Kubernetes avec Popeye !"
 date: 2020-04-07T14:00:00+02:00
 draft: false
+description: "Popeye est un outil permettant de diagnostiquer rapidement des clusters Kubernetes"
 
 tags: ["kubernetes", "tool"]
 
 toc: true
 
 featuredImage: "/images/kubernetes-popeye/kubernetes-popeye-featured.png"
+images:
+- "/images/kubernetes-popeye/kubernetes-popeye-featured.png"
 ---
+
+<!--more-->
 
 ## Présentation de l'outil
 
-En cherchant un outil me permettant de diagnostiquer rapidement un de mes cluster Kubernetes, je suis tombé, un peu par hasard, sur Popeye !  
+En cherchant un outil me permettant de diagnostiquer rapidement un de mes clusters Kubernetes, je suis tombé, un peu par hasard, sur Popeye !  
 
 [Popeye](https://popeyecli.io) est un outil qui analyse un cluster Kubernetes et qui en remonte les problèmes potentiels de ressources et configurations.
 Il peut aussi alerter sur la sous-capacité CPU et mémoire du cluster en s'appuyant sur le serveur de métriques déployé sur celui-ci.
