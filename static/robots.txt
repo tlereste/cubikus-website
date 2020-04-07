@@ -1,25 +1,15 @@
-User-agent: *
-
-Disallow: /images/
-Disallow: /js/
-Disallow: /css/
-
 # You guys are cool with me.
 User-agent: Twitterbot
 Disallow:
-Allow: /images/
 
 User-agent: DuckDuckBot
 Disallow:
-Allow: /images/
 
 User-agent: Googlebot
 Disallow:
-Allow: /images/
 
 User-agent: MSNBot
 Disallow:
-Allow: /images/
 
 # Block
 
@@ -79,5 +69,10 @@ Disallow: /
 
 User-agent: ZoominfoBot
 Disallow: /
+
+User-agent: *
+Disallow: /images/
+Disallow: /js/
+Disallow: /css/
 
 Sitemap: {{ "sitemap.xml" | absLangURL }}
