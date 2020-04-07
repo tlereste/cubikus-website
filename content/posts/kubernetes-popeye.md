@@ -13,6 +13,8 @@ images:
 - "/images/kubernetes-popeye/kubernetes-popeye-featured.png"
 ---
 
+<!--more-->
+
 ## Présentation de l'outil
 
 En cherchant un outil me permettant de diagnostiquer rapidement un de mes clusters Kubernetes, je suis tombé, un peu par hasard, sur Popeye !  
