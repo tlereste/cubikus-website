@@ -1,21 +1,23 @@
 User-agent: *
 
-# You guys are cool with me.
-User-agent: Twitterbot
-Disallow:
-
-User-agent: DuckDuckBot
-Disallow:
-
-User-agent: Googlebot
-Disallow:
-
-User-agent: MSNBot
-Disallow:
-
 Disallow: /images/
 Disallow: /js/
 Disallow: /css/
+
+# You guys are cool with me.
+User-agent: Twitterbot
+Allow: /images/
+
+User-agent: DuckDuckBot
+Allow: /images/
+
+User-agent: Googlebot
+Allow: /images/
+
+User-agent: MSNBot
+Allow: /images/
+
+# Block
 
 User-agent: MJ12bot
 Disallow: /
