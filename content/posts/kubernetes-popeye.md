@@ -10,7 +10,7 @@ toc: true
 
 featuredImage: "/images/kubernetes-popeye/kubernetes-popeye-featured.png"
 images:
-- "/images-allowed/kubernetes-popeye/kubernetes-popeye-twitter.png"
+- "/images/kubernetes-popeye/kubernetes-popeye-twitter.png"
 ---
 
 <!--more-->
