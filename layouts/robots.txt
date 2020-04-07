@@ -1,7 +1,11 @@
 User-agent: *
-Disallow:
+
+Disallow: /images/
+Disallow: /js/
+Disallow: /css/
 
 # You guys are cool with me.
+
 User-agent: Twitterbot
 Disallow:
 
