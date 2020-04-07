@@ -8,7 +8,8 @@ tags: ["kubernetes", "tool"]
 toc: true
 
 featuredImage: "/images/kubernetes-popeye/kubernetes-popeye-featured.png"
-images: ["/images/kubernetes-popeye/kubernetes-popeye-featured.png"]
+images:
+- "/images/kubernetes-popeye/kubernetes-popeye-featured.png"
 ---
 
 ## Présentation de l'outil
