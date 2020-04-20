@@ -2,10 +2,17 @@
 // Override Variables
 // ==============================
 
+// fix apostrophe bug
 html {
     font-family:-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei UI,Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji !important;
 }
 
+// remove #blockquote display
 .single .content blockquote::after {
     content : "" !important;
+}
+
+// space big title
+.single .content h2 {
+    margin-top: 2.5rem !important;
 }

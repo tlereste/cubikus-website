@@ -75,7 +75,7 @@ Mais vous pouvez aussi utiliser un IDE plus adapté, [Goland](https://www.jetbra
   
 ## Tout est en place, par où commencer ?  
 
-Il existe de nombreuses manières de contribuer au projet Kubernetes, en voici quelques-unes :  
+Voici quelques manières de contribuer au projet Kubernetes :   
 - développement d'une évolution
 - correction d'un bug
 - création de tests unitaires
@@ -122,16 +122,16 @@ Voici quelques conseils et astuces à utiliser lors de votre contribution.
 ### Le code
 
 Kubernetes est développé en [Golang](https://golang.org) (Go).  
-C'est le cas pour la majorité des projets CNCF comme on peut le voir [ici](https://k8s.devstats.cncf.io/d/67/licenses-and-programming-languages).
+C'est aussi le cas pour la majorité des projets CNCF comme on peut le voir [ici](https://k8s.devstats.cncf.io/d/67/licenses-and-programming-languages).
 
-Si vous n'êtes pas familier avec ce langage, un tutoriel est disponible sur le site officiel : https://tour.golang.org/  
-Mais rien ne remplace un bon livre comme [Go In Action](https://www.manning.com/books/go-in-action) par exemple !
+Si vous n'êtes pas familier avec ce langage :
+- un tutoriel est disponible sur le site officiel : https://tour.golang.org/  
+- mais rien ne remplace un bon livre comme [Go In Action](https://www.manning.com/books/go-in-action) par exemple !
 
-2 points d'attention : 
-- Pensez toujours à lancer les tests avant d'effectuer votre pull request avec la commande : `go test` ou `make test`
-- Pensez aussi à vérifier que le code est bien formaté avec l'outil à l'aide de la commande [gofmt](https://golang.org/cmd/gofmt).
-
-Ces étapes sont décrites dans [le guide du développement officiel](https://github.com/kubernetes/community/blob/master/contributors/devel/development.md)  
+Voici 2 points d'attention avant d'effectuer votre PR : 
+- Lancer les tests avec la commande : `go test` ou `make test`
+- Vérifier que le code est bien formaté avec l'outil [gofmt](https://golang.org/cmd/gofmt).
+Ces étapes sont décrites dans [le guide du développement officiel](https://github.com/kubernetes/community/blob/master/contributors/devel/development.md).
 
 ### La communication
 
@@ -174,24 +174,25 @@ git rebase upstream/master
 #### Squash des commits
 Il est conseillé, et il vous sera probablement demandé de **squasher** vos **commits**.
 Cela veut dire fusionner plusieurs commits en un seul afin de garder un historique git propre.  
-Voici un très bon article indiquant comment effectuer cette action : [comment squasher ses commits](https://www.ekino.com/articles/comment-squasher-efficacement-ses-commits-avec-git)
+Voici un très bon article indiquant comment effectuer cette action : [comment squasher ses commits](https://www.ekino.com/articles/comment-squasher-efficacement-ses-commits-avec-git).
  
 
 ## Et après la pull request ?
 
 ### CI / CD
 
-Le processus d'intégration / déploiement continue (CI/CD) est effectué par [Prow](https://github.com/kubernetes/test-infra/blob/master/prow/README.md).
+Le processus d'intégration / déploiement continue (CI / CD) est effectué par [Prow](https://github.com/kubernetes/test-infra/blob/master/prow/README.md).
 C'est un outil dédié et développé par le projet Kubernetes. Il utilise les événements de Github pour déclencher des actions mais fonctionne aussi en mode **ChatOps**. 
 Cela signifie qu'en saisissant certains mots clés dans les commentaires, Prow déclenchera des actions.  
-La liste des mots clé / actions est décrite ici : [Comandes Prow](https://prow.k8s.io/command-help?repo=kubernetes%2Fkubernetes)  
+La liste des mots clé / actions est décrite ici : [Comandes Prow](https://prow.k8s.io/command-help?repo=kubernetes%2Fkubernetes).  
 Afin d'avoir un côté visuel à tout cela, un robot nommé [@k8s-ci-robot](https://github.com/k8s-ci-robot) fera le lien entre votre PR et Prow.
   
-![kubernetes prow robot](images/contribution-open-source-kubernetes/prow-robot-kubernetes.png) 
+{{< image src="/images/contribution-open-source-kubernetes/prow-robot-kubernetes.png" title="Kubernetes prow robot" >}}
   
 ### Le traitement de la PR
 
-Les membres du projet peuvent obtenir 1 des 2 statuts suivants :  
+Les membres du projet peuvent avoir les statuts suivants :  
+- **members** 
 - **reviewers** qui effectuent les revues de code
 - **approvers** qui mergent le code (et peuvent aussi effectuer les revues de code)
   
@@ -209,7 +210,7 @@ Ensuite, un **approver** merge la PR avec le commentaire `/approve`.
 
 Si votre PR est bloquée ou si vous avez besoin d'aide, vous pouvez :  
 - Dans Github, relancer une personne en spécifiant son username préfixé d'un @ afin qu'elle soit notifiée     
-- Il existe aussi une grande communauté sur le **Slack** officiel : https://kubernetes.slack.com. Vous pouvez contacter la personne directement ou demander de l'aide ou une relecture sur le channel correspondant.
+- Il existe aussi une grande communauté sur le **Slack** officiel : https://kubernetes.slack.com. Contacter la personne directement ou demander de l'aide ou une relecture sur le channel correspondant.
 
 Quelques exemples de channels utiles :  
 - \#announcements : les annonces des projets CNCF, nouvelles versions, failles de sécurité, événements...
@@ -218,8 +219,8 @@ Quelques exemples de channels utiles :
 - \#kube-state-metrics : questions, pull requests, annonces liées au projet kube-state-metrics
 - ...
 
-Si vous avez des retours sur votre pull request, si celle-ci donne lieu a de nouveaux commit, pensez bien à refaire les étapes mentionnées plus haut : 
-Squash des commit, relance des tests unitaires, relance du check du formatage gofmt.
+Si vous avez des retours sur votre PR et si celle-ci donne lieu a de nouveaux commits, pensez bien à refaire les étapes mentionnées plus haut : 
+squash des commits, relance des tests unitaires, relance de la vérification du formatage.
 
 
 ## Retour d'expérience
@@ -246,11 +247,11 @@ Ce qui fait une durée de 4 mois. Soyez patient !
 
 ### Conseils  
 
-### Sélection du repository
+#### Choix du repository
 
 Pour débuter, et ça n'engage que moi, contribuez sur d'autres repository plus petits de l'organisation Kubernetes plutôt que le repository principal.  
 Après cette 1ère PR, j'ai choisi de contribuer sur d'autres projets de l'organisation :
-- kube-state-metrics : génère des métriques au format Prometheus de l'état des objets Kubernetes  
+- kube-state-metrics : génére des métriques au format Prometheus de l'état des objets Kubernetes  
 - krew et krew-index : gestionnaire de paquets pour les plugins de kubectl 
 
 Pour Krew, j'ai par exemple modifié la documentation pour y ajouter [l'outil Popeye](https://thibault-lereste.fr/2020/04/kubernetes-popeye/).  
@@ -271,7 +272,7 @@ bref que des avantages !
 Je vous conseille d'effectuer une recherche sur le label `good first issue`. 
 Cela correspond à des issues assez simples taggées par les mainteneurs ou contributeurs du projet.  
   
-![kubernetes good first issue](images/contribution-open-source-kubernetes/good-first-issue-kubernetes.png)
+![kubernetes good first issue](images/contribution-open-source-kubernetes/good-first-issue-kubernetes.png)  
   
 Il existe aussi un compte Twitter [goodfirstissue](https://twitter.com/goodfirstissue) qui tweet automatiquement les nouvelles `good first issue` de certains projets.
 
