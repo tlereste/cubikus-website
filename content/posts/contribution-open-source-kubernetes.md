@@ -147,7 +147,7 @@ il est donc très important d'être poli, précis et clair dans les échanges qu
 
 ### Git
 
-Voici quelques commandes qui vous seront utiles pour la réalisation de votre PR.  
+Voici quelques commandes utiles pour la réalisation de votre PR.  
 
 #### Configurer votre username et email
 Il faut configurer les mêmes utilisées sur Github (et pour signer la CLA de la Linux foundation).  
@@ -179,6 +179,8 @@ Voici un très bon article indiquant comment effectuer cette action : [comment s
 
 ## Et après la pull request ?
 
+### CI / CD
+
 Le processus d'intégration / déploiement continue (CI/CD) est effectué par [Prow](https://github.com/kubernetes/test-infra/blob/master/prow/README.md).
 C'est un outil dédié et développé par le projet Kubernetes. Il utilise les événements de Github pour déclencher des actions mais fonctionne aussi en mode **ChatOps**. 
 Cela signifie qu'en saisissant certains mots clés dans les commentaires, Prow déclenchera des actions.  
@@ -187,6 +189,8 @@ Afin d'avoir un côté visuel à tout cela, un robot nommé [@k8s-ci-robot](http
   
 ![kubernetes prow robot](images/contribution-open-source-kubernetes/prow-robot-kubernetes.png) 
   
+### Le traitement de la PR
+
 Les membres du projet peuvent obtenir 1 des 2 statuts suivants :  
 - **reviewers** qui effectuent les revues de code
 - **approvers** qui mergent le code (et peuvent aussi effectuer les revues de code)
@@ -200,6 +204,8 @@ Si vous souhaitez l'assigner à une personne en plus, vous pouvez saisir le comm
   
 Un **reviewer** doit valider la PR avec le commentaire `/lgtm` qui signifie **look good too me**.
 Ensuite, un **approver** merge la PR avec le commentaire `/approve`.
+
+### Faire vivre la PR
 
 Si votre PR est bloquée ou si vous avez besoin d'aide, vous pouvez :  
 - Dans Github, relancer une personne en spécifiant son username préfixé d'un @ afin qu'elle soit notifiée     
@@ -240,8 +246,10 @@ Ce qui fait une durée de 4 mois. Soyez patient !
 
 ### Conseils  
 
+### Sélection du repository
+
 Pour débuter, et ça n'engage que moi, contribuez sur d'autres repository plus petits de l'organisation Kubernetes plutôt que le repository principal.  
-Après cette première pull request, j'ai choisi de contribuer sur d'autres projets de l'organisation :
+Après cette 1ère PR, j'ai choisi de contribuer sur d'autres projets de l'organisation :
 - kube-state-metrics : génère des métriques au format Prometheus de l'état des objets Kubernetes  
 - krew et krew-index : gestionnaire de paquets pour les plugins de kubectl 
 
@@ -258,13 +266,13 @@ Des projets plus petits seront plus faciles à appréhender, aussi bien au nivea
 De plus, vous serez moins en concurence avec d'autres personnes, vous aurez plus de temps pour choisir une issue, des feedbacks plus rapides sur vos pull requests, 
 bref que des avantages !  
 
-Une fois un projet / repository choisi, il faut sélectionner une issue.  
+#### Sélection de l'issue
 
 Je vous conseille d'effectuer une recherche sur le label `good first issue`. 
 Cela correspond à des issues assez simples taggées par les mainteneurs ou contributeurs du projet.  
   
 ![kubernetes good first issue](images/contribution-open-source-kubernetes/good-first-issue-kubernetes.png)
   
-Le compte Twitter [goodfirstissue](https://twitter.com/goodfirstissue) tweet automatiquement les nouvelles "good first issue".
+Il existe aussi un compte Twitter [goodfirstissue](https://twitter.com/goodfirstissue) qui tweet automatiquement les nouvelles `good first issue` de certains projets.
 
 Si vous souhaitez simplement aider quelqu'un sur un problème ou une question, effectuez une recherche avec le label `help wanted`.
