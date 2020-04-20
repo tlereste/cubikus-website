@@ -116,11 +116,11 @@ Quelques exemples de SIG :
 Vous avez trouvé une issue qui vous plait, pensez tout d'abord à vérifier qu'elle n'est assignée à personne et que personne ne travaille dessus.
 Ensuite, assignez-vous cette issue avec le commentaire `/assign`.
 
-### La contribution    
+## La contribution    
 
 Voici quelques conseils et astuces à utiliser lors de votre contribution.  
 
-#### Le code
+### Le code
 
 Kubernetes est développé en Golang (Go), comme c'est le cas pour la majorité des projets CNCF, par exemple [Prometheus](https://prometheus.io), [Linkerd](https://linkerd.io) ou [Helm](https://helm.sh).  
 Vous trouverez ici un dashboard public Grafana listant les licences et langages utilisés par les projets CNCF : [licenses-and-programming-languages](https://k8s.devstats.cncf.io/d/67/licenses-and-programming-languages)  
@@ -135,7 +135,7 @@ Pensez aussi à vérifier que le code est bien formaté avec l'outil à l'aide d
 
 Ces étapes sont décrites dans le guide du développement officiel : https://github.com/kubernetes/community/blob/master/contributors/devel/development.md  
 
-#### La communication
+### La communication
 
 Il faut savoir que toutes vos interactions doivent se faire en anglais.
 Que ce soit le code, les commentaires, les échanges... 
@@ -147,11 +147,11 @@ Voici un conseil qui peut paraître bateau, mais il est important de respecter l
 Ce sont des personnes qui prennent de leur temps libre ou du temps alloué par leur société (Redhat, Google... ) pour maintenir le projet, 
 il est donc très important d'être poli, précis et clair dans les échanges que vous aurez avec eux.  
 
-#### Git
+### Git
 
 Voici quelques commandes Git qui vous seront utiles pour la réalisation de votre pull request.  
 
-##### Configurer votre username et email
+#### Configurer votre username et email
 Ce sont les mêmes qui sont utilisées sur Github et pour signer la CLA de la Linux foundation.  
 
 ```
@@ -159,7 +159,7 @@ git config --global user.name "tlereste"
 git config --global user.email lereste.thibault@gmail.com  
 ```
 
-##### Maintenir votre fork à jour :
+#### Maintenir votre fork à jour :
 ```
 # A partir de votre fork cloné, ajout du "upstream" du repository distant
 git remote add upstream git://github.com/tlereste/kubernetes
@@ -174,7 +174,7 @@ git pull upstream master
 git rebase upstream/master
 ```
 
-##### Squash des commits
+#### Squash des commits
 Il est conseillé et il vous sera probablement demandé de **squash** vos **commits**.
 Cela veut dire fusionner plusieurs commits en un seul afin de garder un historique git propre.  
 Voici un très bon article indiquant comment effectuer cette action : 
@@ -268,22 +268,3 @@ Cela correspond à des issues assez simples taggées par les mainteneurs ou cont
 Le compte Twitter [goodfirstissue](https://twitter.com/goodfirstissue) tweet automatiquement les nouvelles "good first issue".
 
 Si vous souhaitez simplement aider quelqu'un sur un problème ou une question, effectuez une recherche avec le label `help wanted`.
-
-
-## D'autres moyens de contribuer
-
-### Hacktoberfest 
-
-C'est un événement qui a lieu du 1er au 31 octobre de chaque année.  
-Il est organisé par [DigitalOcean](https://www.digitalocean.com), Github et [Dev.to](Dev.to) 
-pour promouvoir l'open source aussi bien pour les débutants que pour les expérimentés.  
-Les 50000 premières personnes à effectuer 4 pull requests gagnent un t-shirt !  
-
-Voici le site de l'événément : https://hacktoberfest.digitalocean.com/ 
-
-### Bug bounty
-
-Pour les plus téméraires, il est possible de participer au **bug bounty**.  
-La remontée de failles de sécurité peut être rémunérée en fonction de la criticité de la faille et le domaine touché.   
-
-Plus d'information ici : https://hackerone.com/kubernetes  
