@@ -8,18 +8,20 @@ tags: ["kubernetes", "opensource"]
 
 toc: true
 
-featuredImage: "/images/TODO"
+featuredImage: "/images/contribution-open-source-kubernetes/contribution-open-source-kubernetes-featured.png"
+images:
+- "/images/contribution-open-source-kubernetes/contribution-open-source-kubernetes-twitter.png"
 ---
 
 <!--more-->
 
 ## Histoire
 
-Tout a commencé l'année dernière lors d'un entretien d'embauche pour un poste de [Site Reliability Engineer](https://landing.google.com/sre/).  
-Au fil de la discussion avec le recruteur, celui-ci m'a sorti une phrase qui m'a beaucoup fait réfléchir : 
-"... ici nous recherchons une personne qui, par exemple, serait capable de faire une contribution au projet Kubernetes afin d'y corriger un bug ou y ajouter une petite fonctionnalité..."
+Tout a commencé l'année dernière lors d'un entretien d'embauche pour un poste de [Site Reliability Engineer](https://landing.google.com/sre).  
+Au fil de la discussion avec le recruteur, celui-ci m'a sorti une phrase qui m'a beaucoup fait réfléchir :  
+> ... ici nous recherchons une personne qui, par exemple, serait capable de faire une contribution au projet Kubernetes afin d'y corriger un bug ou y ajouter une petite fonctionnalité...
 
-Après, une semaine de réflexion et souffrant du [syndrome de l'imposteur](https://www.duchess-france.org/jai-teste-syndrome-de-limposteur), je me suis dit, et pourquoi pas moi ?  
+Après une semaine de réflexion et doutant souvent de compétence et succès (je souffre du [syndrome de l'imposteur](https://www.duchess-france.org/jai-teste-syndrome-de-limposteur)), je me suis dit, et pourquoi pas moi ?  
 
 J'ai donc pris ça comme objectif et défi personnel et je me suis lancé dans l'aventure ! 
 
@@ -32,11 +34,11 @@ J'y suis parvenu et ma pull request (PR) a été intégrée a la version 1.18 du
 
 Dans cet article, je ferai un résumé des étapes pour effectuer votre première contribution au projet Kubernetes mais je ne décrirai pas l'architecture et le code du projet.  
 J'ai volontairement omis ou raccourci des passages afin d'avoir un article simple.  
-Vous pourrez trouver une documentation du contributeur complète et bien plus vaste ici : https://github.com/kubernetes/community/tree/master/contributors/devel#readme  
+Vous pourrez trouver une documentation du contributeur complète et bien plus vaste ici : [Kubernetes developer guide](https://github.com/kubernetes/community/tree/master/contributors/devel#readme)  
 
 ### Créer un compte Github  
 
-Le projet Kubernetes se trouve sur Github (ainsi que tous les projets de sa fondation, la Cloud Native Computing Foundation).   
+Le projet Kubernetes se trouve sur Github (ainsi que tous les projets de sa fondation, la Cloud Native Computing Foundation, dit CNCF).   
 Si vous n'avez pas déjà de compte Github, il faut donc en créer un ici : https://github.com/  
 
 ### S'inscrire à Linux foundation  
@@ -46,14 +48,14 @@ Kubernetes y fut intégré en tant que premier projet.
 Nous avons donc Kubernetes faisant partie de la **CNCF**, qui elle-même fait partie de la **Linux foundation**.  
 
 Pour contribuer sur le projet, il faut signer une licence, la **CNCF Individual Contributor License Agreement** de la Linux foundation.
-Pour cela, suivez la procédure suivante : https://github.com/kubernetes/community/blob/master/CLA.md  
+Pour cela, suivez la procédure suivante : [The Contributor License Agreement](https://github.com/kubernetes/community/blob/master/CLA.md)  
 
 ### Forker le projet 
 
 Cela consiste à faire une copie personnelle du projet sur laquelle vous pourrez créer vos propres branches, committer et pusher du code ainsi que créer des pull requests à destination du projet initial.  
 À la différence d'un clone qui permettrait de récupérer le projet sur votre poste local, mais vous empêcherait de pusher des modifications sur celui-ci.   
 
-Pour effectuer le fork, il faut aller sur le projet : https://github.com/kubernetes/kubernetes.  
+Pour effectuer le fork, il faut aller sur le projet : https://github.com/kubernetes/kubernetes  
 Puis, cliquer sur le bouton fork en haut à droite. [IMAGE]  
 Après quelques de secondes, le repository sera présent dans votre profil, exemple : https://github.com/tlereste/kubernetes  
 
@@ -121,8 +123,7 @@ Voici quelques conseils et astuces à utiliser lors de votre contribution.
 #### Le code
 
 Kubernetes est développé en Golang (Go), comme c'est le cas pour la majorité des projets CNCF, par exemple [Prometheus](https://prometheus.io), [Linkerd](https://linkerd.io) ou [Helm](https://helm.sh).  
-Vous trouverez ici un dashboard public Grafana listant les licences et langages utilisés par les projets CNCF :  
-https://k8s.devstats.cncf.io/d/67/licenses-and-programming-languages  
+Vous trouverez ici un dashboard public Grafana listant les licences et langages utilisés par les projets CNCF : [licenses-and-programming-languages](https://k8s.devstats.cncf.io/d/67/licenses-and-programming-languages)  
 N'hésitez pas à naviguer dans les autres dashboards, il y a plein d'informations intéressantes !  
 
 Si vous n'êtes pas familier avec ce langage, un tutoriel est disponible sur le site officiel : https://tour.golang.org/  
