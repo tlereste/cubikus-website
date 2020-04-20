@@ -28,11 +28,11 @@ J'ai donc pris ça comme objectif et défi personnel et je me suis lancé dans l
 `<spoiler>`  
 J'y suis parvenu et ma pull request (PR) a été intégrée a la version 1.18 du projet Kubernetes : https://github.com/kubernetes/kubernetes/pull/82333  
 `</spoiler>`  
-
-
+  
+  
 ## Prérequis : mise en place de votre environnement
 
-Dans cet article, je ferai un résumé des étapes pour effectuer votre première contribution au projet Kubernetes mais je ne décrirai pas l'architecture et le code du projet.  
+Dans cet article, je ferai un résumé des étapes pour effectuer votre première contribution au projet Kubernetes mais je ne décrirai pas l'architecture et le code du projet. 
 J'ai volontairement omis ou raccourci des passages afin d'avoir un article simple.  
 Vous pourrez trouver une documentation du contributeur complète et bien plus vaste ici : [Kubernetes developer guide](https://github.com/kubernetes/community/tree/master/contributors/devel#readme)  
 
@@ -56,8 +56,8 @@ Cela consiste à faire une copie personnelle du projet sur laquelle vous pourrez
 À la différence d'un clone qui permettrait de récupérer le projet sur votre poste local, mais vous empêcherait de pusher des modifications sur celui-ci.  
 
 Pour effectuer le fork, il faut aller sur le projet : `https://github.com/kubernetes/kubernetes`  
-Puis, cliquer sur le bouton fork en haut à droite.
-![fork kubernetes](images/contribution-open-source-kubernetes/fork-kubernetes.png) 
+Puis, cliquer sur le bouton fork en haut à droite. 
+![fork kubernetes](images/contribution-open-source-kubernetes/fork-kubernetes.png)  
 Après quelques de secondes, le repository sera présent dans votre profil, exemple : `https://github.com/tlereste/kubernetes`  
 
 ### Cloner votre projet 
@@ -71,16 +71,15 @@ git clone https://github.com/tlereste/kubernetes.git .
 
 Personnellement, j'utilise l'IDE de Jetbrains [Intellij](https://www.jetbrains.com/fr-fr/idea/) et son interface pour cette action.  
 Mais vous pouvez aussi utiliser un IDE plus adapté, [Goland](https://www.jetbrains.com/fr-fr/go/) (encore chez Jetbrains).  
-
-
+  
+  
 ## Tout est en place, par où commencer ?  
 
 Il existe de nombreuses manières de contribuer au projet Kubernetes, en voici quelques-unes :  
 - développement d'une évolution
 - correction d'un bug
 - création de tests unitaires
-- création, mise à jour ou tracduction de la documentation
-- mise à jour des versions des dépendances
+- création, mise à jour ou traduction de la documentation
 - ...
 
 Ce choix doit se faire en fonction de vos affinités, temps, compétences.
@@ -88,7 +87,7 @@ Ce choix doit se faire en fonction de vos affinités, temps, compétences.
 Pour commencer, il n'y a pas besoin de grosses contributions, "les petits ruisseaux font les grandes rivières". 
 La communauté encourage même les petits commits et petites pull request : [Small is better](https://github.com/kubernetes/community/blob/master/contributors/guide/pull-requests.md#2-smaller-is-better-small-commits-small-pull-requests)
 
-Il y a des limites à tout cela, souvent sur les nouveaux projets, des personnes font la chasse aux **typos** (fautes d'orthographe) afin de devenir contributeur du projet.  
+Souvent sur les nouveaux projets, des personnes font la chasse aux **typos** (fautes d'orthographe) afin de devenir contributeur du projet.  
 
 ### Soumettre une nouvelle issue
 
@@ -102,7 +101,7 @@ Puis :
 description, version de Kubernetes utilisée... 
 - Vérifiez bien en bas du template les issues similaires pour éviter les doublons : **Similar to X existing issues**
 
-Après sa création, l'issue sera catégorisée par ([Special Interest Group](https://github.com/kubernetes/community/blob/master/sig-list.md) ou **SIG**, c'est-à-dire des groupes fonctionnels et/ou techniques avec des leaders, newsletters, channel slack et réunions propres.  
+Après sa création, l'issue sera catégorisée par [Special Interest Group](https://github.com/kubernetes/community/blob/master/sig-list.md) ou **SIG**, c'est-à-dire des groupes fonctionnels et/ou techniques avec des leaders, newsletters, channel slack et réunions propres.  
 
 Quelques exemples de SIG :  
 - Cli : ce qui touche au client kubectl et les outils associés
@@ -114,25 +113,25 @@ Quelques exemples de SIG :
 
 Vous avez trouvé une issue qui vous plait, pensez tout d'abord à vérifier qu'elle n'est assignée à personne et que personne ne travaille dessus.
 Ensuite, assignez-vous cette issue avec le commentaire `/assign`.
-
+  
+  
 ## La contribution    
 
 Voici quelques conseils et astuces à utiliser lors de votre contribution.  
 
 ### Le code
 
-Kubernetes est développé en Golang (Go), comme c'est le cas pour la majorité des projets CNCF, par exemple [Prometheus](https://prometheus.io), [Linkerd](https://linkerd.io) ou [Helm](https://helm.sh).  
-Vous trouverez ici un dashboard public Grafana listant les licences et langages utilisés par les projets CNCF : [licenses-and-programming-languages](https://k8s.devstats.cncf.io/d/67/licenses-and-programming-languages)  
-N'hésitez pas à naviguer dans les autres dashboards, il y a plein d'informations intéressantes !  
+Kubernetes est développé en [Golang](https://golang.org) (Go).  
+C'est le cas pour la majorité des projets CNCF comme on peut le voir [ici](https://k8s.devstats.cncf.io/d/67/licenses-and-programming-languages).
 
 Si vous n'êtes pas familier avec ce langage, un tutoriel est disponible sur le site officiel : https://tour.golang.org/  
 Mais rien ne remplace un bon livre comme [Go In Action](https://www.manning.com/books/go-in-action) par exemple !
 
-Pensez toujours à lancer les tests avant d'effectuer votre pull request avec la commande : `go test` ou `make test`
+2 points d'attention : 
+- Pensez toujours à lancer les tests avant d'effectuer votre pull request avec la commande : `go test` ou `make test`
+- Pensez aussi à vérifier que le code est bien formaté avec l'outil à l'aide de la commande [gofmt](https://golang.org/cmd/gofmt).
 
-Pensez aussi à vérifier que le code est bien formaté avec l'outil à l'aide de la commande [gofmt](https://golang.org/cmd/gofmt).
-
-Ces étapes sont décrites dans le guide du développement officiel : https://github.com/kubernetes/community/blob/master/contributors/devel/development.md  
+Ces étapes sont décrites dans [le guide du développement officiel](https://github.com/kubernetes/community/blob/master/contributors/devel/development.md)  
 
 ### La communication
 
@@ -142,7 +141,7 @@ Attention aux tournures de phrase, syntaxe et orthographe,
 n'hésitez pas à abuser des outils de traductions en ligne notamment pour communiquer avec vos interlocuteurs 
 ([Linguee](https://www.linguee.fr) et [DeepL](https://www.deepl.com) par exemple).
 
-Voici un conseil qui peut paraître bateau, mais il est important de respecter les mainteneurs du projet. 
+Cela peut paraître bateau, mais il est important de respecter les mainteneurs du projet. 
 Ce sont des personnes qui prennent de leur temps libre ou du temps alloué par leur société (Redhat, Google... ) pour maintenir le projet, 
 il est donc très important d'être poli, précis et clair dans les échanges que vous aurez avec eux.  
 
@@ -151,8 +150,7 @@ il est donc très important d'être poli, précis et clair dans les échanges qu
 Voici quelques commandes qui vous seront utiles pour la réalisation de votre PR.  
 
 #### Configurer votre username et email
-Ce sont les mêmes qui sont utilisées sur Github et pour signer la CLA de la Linux foundation.  
-
+Il faut configurer les mêmes utilisées sur Github (et pour signer la CLA de la Linux foundation).  
 ```
 git config --global user.name "tlereste"  
 git config --global user.email lereste.thibault@gmail.com  
@@ -203,8 +201,8 @@ Si vous souhaitez l'assigner à une personne en plus, vous pouvez saisir le comm
 Un **reviewer** doit valider la PR avec le commentaire `/lgtm` qui signifie **look good too me**.
 Ensuite, un **approver** merge la PR avec le commentaire `/approve`.
 
-Si votre PR est bloquée ou si vous avez besoin d'aide, plusieurs solutions s'offrent à vous :  
-- Dans Github, vous pouvez relancer une personne en spécifiant son username préfixé d'un @ afin qu'elle soit notifiée.   
+Si votre PR est bloquée ou si vous avez besoin d'aide, vous pouvez :  
+- Dans Github, relancer une personne en spécifiant son username préfixé d'un @ afin qu'elle soit notifiée     
 - Il existe aussi une grande communauté sur le **Slack** officiel : https://kubernetes.slack.com. Vous pouvez contacter la personne directement ou demander de l'aide ou une relecture sur le channel correspondant.
 
 Quelques exemples de channels utiles :  
@@ -218,7 +216,7 @@ Si vous avez des retours sur votre pull request, si celle-ci donne lieu a de nou
 Squash des commit, relance des tests unitaires, relance du check du formatage gofmt.
 
 
-## Difficultés rencontrées
+## Retour d'expérience
 
 ### Difficultés rencontrées
 
@@ -242,8 +240,7 @@ Ce qui fait une durée de 4 mois. Soyez patient !
 
 ### Conseils  
 
-Pour débuter, et ça n'engage que moi, je vous conseillerais, plutôt que de contribuer principal, de contribuer sur d'autres repository plus petits de l'organisation Kubernetes.  
-
+Pour débuter, et ça n'engage que moi, contribuez sur d'autres repository plus petits de l'organisation Kubernetes plutôt que le repository principal.  
 Après cette première pull request, j'ai choisi de contribuer sur d'autres projets de l'organisation :
 - kube-state-metrics : génère des métriques au format Prometheus de l'état des objets Kubernetes  
 - krew et krew-index : gestionnaire de paquets pour les plugins de kubectl 
@@ -265,6 +262,7 @@ Une fois un projet / repository choisi, il faut sélectionner une issue.
 
 Je vous conseille d'effectuer une recherche sur le label `good first issue`. 
 Cela correspond à des issues assez simples taggées par les mainteneurs ou contributeurs du projet.  
+  
 ![kubernetes good first issue](images/contribution-open-source-kubernetes/good-first-issue-kubernetes.png)
   
 Le compte Twitter [goodfirstissue](https://twitter.com/goodfirstissue) tweet automatiquement les nouvelles "good first issue".
