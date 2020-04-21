@@ -17,7 +17,7 @@ images:
 
 ## Histoire
 
-Tout a commencé l'année dernière lors d'un entretien d'embauche pour un poste de [Site Reliability Engineer](https://landing.google.com/sre).  
+Tout a commencé l'année dernière, lors d'un entretien d'embauche pour un poste de [Site Reliability Engineer](https://landing.google.com/sre).  
 Au fil de la discussion avec le recruteur, celui-ci m'a sorti une phrase qui m'a beaucoup fait réfléchir :  
 > ... ici nous recherchons une personne qui, par exemple, serait capable de faire une contribution au projet Kubernetes afin d'y corriger un bug ou y ajouter une petite fonctionnalité...
 
@@ -26,7 +26,7 @@ Après une semaine de réflexion et doutant souvent de compétence et succès (j
 J'ai donc pris ça comme objectif et défi personnel et je me suis lancé dans l'aventure !  
   
 `<spoiler>`  
-J'y suis parvenu et ma pull request (PR) a été intégrée a la version 1.18 du projet Kubernetes : https://github.com/kubernetes/kubernetes/pull/82333  
+J'y suis parvenu et ma pull request (PR) a été intégrée à la version 1.18 du projet Kubernetes : https://github.com/kubernetes/kubernetes/pull/82333  
 `</spoiler>`  
   
   
@@ -55,10 +55,10 @@ Pour cela, suivez la procédure suivante : [The Contributor License Agreement](h
 Cela consiste à faire une copie personnelle du projet sur laquelle vous pourrez créer vos propres branches, committer et pusher du code ainsi que créer des pull requests à destination du projet initial.  
 À la différence d'un clone qui permettrait de récupérer le projet sur votre poste local, mais vous empêcherait de pusher des modifications sur celui-ci.  
 
-Pour effectuer le fork, il faut aller sur le projet : `https://github.com/kubernetes/kubernetes`  
-Puis, cliquer sur le bouton fork en haut à droite. 
-![fork kubernetes](images/contribution-open-source-kubernetes/fork-kubernetes.png)  
-Après quelques de secondes, le repository sera présent dans votre profil, exemple : `https://github.com/tlereste/kubernetes`  
+Pour effectuer le fork :
+- Aller sur le projet : `https://github.com/kubernetes/kubernetes`  
+- Cliquer sur le bouton fork en haut à droite : ![fork kubernetes](images/contribution-open-source-kubernetes/fork-kubernetes.png)  
+- Après quelques de secondes, le repository sera présent dans votre profil, exemple : `https://github.com/tlereste/kubernetes`  
 
 ### Cloner votre projet 
 
@@ -87,7 +87,7 @@ Ce choix doit se faire en fonction de vos affinités, temps, compétences.
 Pour commencer, il n'y a pas besoin de grosses contributions, "les petits ruisseaux font les grandes rivières". 
 La communauté encourage même les petits commits et petites pull request : [Small is better](https://github.com/kubernetes/community/blob/master/contributors/guide/pull-requests.md#2-smaller-is-better-small-commits-small-pull-requests)
 
-Souvent sur les nouveaux projets, des personnes font la chasse aux **typos** (fautes d'orthographe) afin de devenir contributeur du projet.  
+Certains, sur les nouveaux projets, font même la chasse aux **typos** (fautes d'orthographe) afin de devenir contributeur du projet !  
 
 ### Soumettre une nouvelle issue
 
@@ -182,9 +182,9 @@ Voici un très bon article indiquant comment effectuer cette action : [comment s
 ### CI / CD
 
 Le processus d'intégration / déploiement continue (CI / CD) est effectué par [Prow](https://github.com/kubernetes/test-infra/blob/master/prow/README.md).
-C'est un outil dédié et développé par le projet Kubernetes. Il utilise les événements de Github pour déclencher des actions mais fonctionne aussi en mode **ChatOps**. 
-Cela signifie qu'en saisissant certains mots clés dans les commentaires, Prow déclenchera des actions.  
-La liste des mots clé / actions est décrite ici : [Comandes Prow](https://prow.k8s.io/command-help?repo=kubernetes%2Fkubernetes).  
+C'est un outil dédié et développé par le projet Kubernetes.  
+Il fonctionne notamment en mode **ChatOps**. 
+Cela signifie qu'en saisissant certains mots clés dans les commentaires, Prow déclenchera des actions qui sont décrite ici : [Commandes Prow](https://prow.k8s.io/command-help?repo=kubernetes%2Fkubernetes).  
 Afin d'avoir un côté visuel à tout cela, un robot nommé [@k8s-ci-robot](https://github.com/k8s-ci-robot) fera le lien entre votre PR et Prow.
   
 {{< image src="/images/contribution-open-source-kubernetes/prow-robot-kubernetes.png" title="Kubernetes prow robot" >}}
@@ -192,7 +192,7 @@ Afin d'avoir un côté visuel à tout cela, un robot nommé [@k8s-ci-robot](http
 ### Le traitement de la PR
 
 Les membres du projet peuvent avoir les statuts suivants :  
-- **members** 
+- **members** qui n'ont pas de droits particuliers
 - **reviewers** qui effectuent les revues de code
 - **approvers** qui mergent le code (et peuvent aussi effectuer les revues de code)
   
@@ -239,18 +239,18 @@ C'est très difficile d'accéder à une nouvelle issue avant qu'une personne ave
 De plus, dans mon cas, le processus de prise en charge et relecture de l'issue a été très long. Cela s'explique par le fait que les mainteneurs du projet étaient occupés à créer la release de la version 1.17 de Kubernetes et aussi au fait que mon issue concernait une fontionnalité non critique et non prioritaire.  
 
 Pour information, ma [pull request](https://github.com/kubernetes/kubernetes/pull/82333) a été :
-- créée le 4 septembre :   
+- créée le 4 septembre  
 - relue le 7 janvier  
 - mergée le 15 janvier  
 
-Ce qui fait une durée de 4 mois. Soyez patient !
+Ce qui fait une durée totale de 4 mois. Soyez patient !
 
 ### Conseils  
 
 #### Choix du repository
 
-Pour débuter, et ça n'engage que moi, contribuez sur d'autres repository plus petits de l'organisation Kubernetes plutôt que le repository principal.  
-Après cette 1ère PR, j'ai choisi de contribuer sur d'autres projets de l'organisation :
+Pour débuter, et ça n'engage que moi, contribuez sur des repository plus petits de l'organisation Kubernetes plutôt que sur le repository principal.  
+Après cette 1ère PR, j'ai choisi de contribuer sur ces autres projets :  
 - kube-state-metrics : génére des métriques au format Prometheus de l'état des objets Kubernetes  
 - krew et krew-index : gestionnaire de paquets pour les plugins de kubectl 
 
