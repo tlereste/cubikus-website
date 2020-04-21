@@ -25,10 +25,9 @@ Après une semaine de réflexion et doutant souvent de compétence et succès (j
 
 J'ai donc pris ça comme objectif et défi personnel et je me suis lancé dans l'aventure !  
   
-`<spoiler>`  
+{{< admonition success "Avec succès" >}}
 J'y suis parvenu et ma pull request (PR) a été intégrée à la version 1.18 du projet Kubernetes : https://github.com/kubernetes/kubernetes/pull/82333  
-`</spoiler>`  
-  
+{{< /admonition >}}
   
 ## Prérequis : mise en place de votre environnement
 
@@ -39,7 +38,7 @@ Vous pourrez trouver une documentation du contributeur complète et bien plus va
 ### Créer un compte Github  
 
 Le projet Kubernetes se trouve sur Github (ainsi que tous les projets de sa fondation, la Cloud Native Computing Foundation, dit CNCF).   
-Si vous n'avez pas de compte Github, il faut donc en créer un ici : https://github.com/  
+Si vous n'avez pas de compte Github, il faut donc en créer un [ici](https://github.com).  
 
 ### S'inscrire à Linux foundation  
 
@@ -56,9 +55,9 @@ Cela consiste à faire une copie personnelle du projet sur laquelle vous pourrez
 À la différence d'un clone qui permettrait de récupérer le projet sur votre poste local, mais vous empêcherait de pusher des modifications sur celui-ci.  
 
 Pour effectuer le fork :
-- Aller sur le projet : `https://github.com/kubernetes/kubernetes`  
-- Cliquer sur le bouton fork en haut à droite : ![fork kubernetes](images/contribution-open-source-kubernetes/fork-kubernetes.png)  
-- Après quelques de secondes, le repository sera présent dans votre profil, exemple : `https://github.com/tlereste/kubernetes`  
+- aller sur le projet : `https://github.com/kubernetes/kubernetes`  
+- cliquer sur le bouton **Fork** en haut à droite de la page
+- après quelques de secondes, le repository sera présent dans votre profil, exemple : `https://github.com/tlereste/kubernetes`  
 
 ### Cloner votre projet 
 
@@ -85,7 +84,7 @@ Voici quelques manières de contribuer au projet Kubernetes :
 Ce choix doit se faire en fonction de vos affinités, temps, compétences.
 
 Pour commencer, il n'y a pas besoin de grosses contributions, "les petits ruisseaux font les grandes rivières". 
-La communauté encourage même les petits commits et petites pull request : [Small is better](https://github.com/kubernetes/community/blob/master/contributors/guide/pull-requests.md#2-smaller-is-better-small-commits-small-pull-requests)
+La communauté encourage même les petits commits et petites pull request : [Small is better](https://github.com/kubernetes/community/blob/master/contributors/guide/pull-requests.md#2-smaller-is-better-small-commits-small-pull-requests).
 
 Certains, sur les nouveaux projets, font même la chasse aux **typos** (fautes d'orthographe) afin de devenir contributeur du projet !  
 
@@ -94,19 +93,19 @@ Certains, sur les nouveaux projets, font même la chasse aux **typos** (fautes d
 Avant de créer une issue, pensez bien à vérifier qu'une issue similaire n'existe pas déjà en faisant une recherche avec les filtres.  
 
 Puis :  
-- Dans l'onglet **Issue**, cliquer sur le bouton **New Issue**.  
-- Différents types d'issues seront proposés comme **Bug** ou **Enhancement**.  
-- Sélectionnez le type souhaité avec le bouton **Get Started**.  
-- Un template apparaitra permettant de créer l'issue. En fonction de son type, différentes informations seront demandées : 
+- dans l'onglet **Issue**, cliquer sur le bouton **New Issue**.  
+- différents types d'issues seront proposés comme **Bug** ou **Enhancement**.  
+- sélectionnez le type souhaité avec le bouton **Get Started**.  
+- un template apparaitra permettant de créer l'issue. En fonction de son type, différentes informations seront demandées : 
 description, version de Kubernetes utilisée... 
-- Vérifiez bien en bas du template les issues similaires pour éviter les doublons : **Similar to X existing issues**
+- vérifiez bien en bas du template les issues similaires pour éviter les doublons : **Similar to X existing issues**
 
 Après sa création, l'issue sera catégorisée par [Special Interest Group](https://github.com/kubernetes/community/blob/master/sig-list.md) ou **SIG**, c'est-à-dire des groupes fonctionnels et/ou techniques avec des leaders, newsletters, channel slack et réunions propres.  
 
 Quelques exemples de SIG :  
-- Cli : ce qui touche au client kubectl et les outils associés
-- Cloud Provider : lié au cloud privé et public et notamment la neutralité envers les providers de cloud
-- Storage : responsable du stockage et volumes
+- sig cli : traite tout ce qui est lié au client kubectl et ses outils associés
+- sig intrusmentation : couvre les meilleures pratiques pour l'observabilité des clusters
+- sig release : assure la qualité des releases
 - ...
 
 ### Contribuer à une issue existante
@@ -125,12 +124,12 @@ Kubernetes est développé en [Golang](https://golang.org) (Go).
 C'est aussi le cas pour la majorité des projets CNCF comme on peut le voir [ici](https://k8s.devstats.cncf.io/d/67/licenses-and-programming-languages).
 
 Si vous n'êtes pas familier avec ce langage :
-- un tutoriel est disponible sur le site officiel : https://tour.golang.org/  
+- le tutoriel [A Tour of Go](https://tour.golang.org) est disponible sur le site officiel  
 - mais rien ne remplace un bon livre comme [Go In Action](https://www.manning.com/books/go-in-action) par exemple !
 
-Voici 2 points d'attention avant d'effectuer votre PR : 
-- Lancer les tests avec la commande : `go test` ou `make test`
-- Vérifier que le code est bien formaté avec l'outil [gofmt](https://golang.org/cmd/gofmt).
+Lors du développement et avant d'effectuer votre PR, pensez à :  
+- lancer les tests avec la commande : `go test` ou `make test`
+- vérifier que le code est bien formaté avec l'outil [gofmt](https://golang.org/cmd/gofmt).
 Ces étapes sont décrites dans [le guide du développement officiel](https://github.com/kubernetes/community/blob/master/contributors/devel/development.md).
 
 ### La communication
@@ -209,8 +208,8 @@ Ensuite, un **approver** merge la PR avec le commentaire `/approve`.
 ### Faire vivre la PR
 
 Si votre PR est bloquée ou si vous avez besoin d'aide, vous pouvez :  
-- Dans Github, relancer une personne en spécifiant son username préfixé d'un @ afin qu'elle soit notifiée     
-- Il existe aussi une grande communauté sur le **Slack** officiel : https://kubernetes.slack.com. Contacter la personne directement ou demander de l'aide ou une relecture sur le channel correspondant.
+- dans Github, relancer une personne en spécifiant son username préfixé d'un @ afin qu'elle soit notifiée     
+- il existe aussi une grande communauté sur le **Slack** officiel : https://kubernetes.slack.com. Contacter la personne directement ou demander de l'aide ou une relecture sur le channel correspondant.
 
 Quelques exemples de channels utiles :  
 - \#announcements : les annonces des projets CNCF, nouvelles versions, failles de sécurité, événements...
@@ -220,7 +219,7 @@ Quelques exemples de channels utiles :
 - ...
 
 Si vous avez des retours sur votre PR et si celle-ci donne lieu a de nouveaux commits, pensez bien à refaire les étapes mentionnées plus haut : 
-squash des commits, relance des tests unitaires, relance de la vérification du formatage.
+squash des commits, relance des tests unitaires, vérification du formatage du code.
 
 
 ## Retour d'expérience
@@ -249,7 +248,7 @@ Ce qui fait une durée totale de 4 mois. Soyez patient !
 
 #### Choix du repository
 
-Pour débuter, et ça n'engage que moi, contribuez sur des repository plus petits de l'organisation Kubernetes plutôt que sur le repository principal.  
+Pour débuter, et ça n'engage que moi, contribuez sur des repos plus petits de l'organisation Kubernetes plutôt que sur le principal.  
 Après cette 1ère PR, j'ai choisi de contribuer sur ces autres projets :  
 - kube-state-metrics : génére des métriques au format Prometheus de l'état des objets Kubernetes  
 - krew et krew-index : gestionnaire de paquets pour les plugins de kubectl 
@@ -258,9 +257,9 @@ Pour Krew, j'ai par exemple modifié la documentation pour y ajouter [l'outil Po
 
 L'organisation Kubernetes comporte 69 repository, vous avez l'embarras du choix !
 Par exemple :  
-- ingress-nginx
-- kops
-- dashboard
+- ingress-nginx : le Nginx Ingress Controller
+- kops : l'outil de provisionning de clusters
+- dashboard : le tableau de bord (UI) de Kubernetes
 - ...
 
 Des projets plus petits seront plus faciles à appréhender, aussi bien au niveau de l'architecture, qu'au niveau fonctionnel. 
@@ -270,10 +269,14 @@ bref que des avantages !
 #### Sélection de l'issue
 
 Je vous conseille d'effectuer une recherche sur le label `good first issue`. 
-Cela correspond à des issues assez simples taggées par les mainteneurs ou contributeurs du projet.  
+Cela correspond à des issues assez simples taggées par les membres du projet.  
   
 ![kubernetes good first issue](images/contribution-open-source-kubernetes/good-first-issue-kubernetes.png)  
   
 Il existe aussi un compte Twitter [goodfirstissue](https://twitter.com/goodfirstissue) qui tweet automatiquement les nouvelles `good first issue` de certains projets.
 
-Si vous souhaitez simplement aider quelqu'un sur un problème ou une question, effectuez une recherche avec le label `help wanted`.
+Si vous souhaitez simplement aider quelqu'un sur un problème ou une question, effectuez une recherche avec le label `help wanted`.  
+
+## A vous !
+
+J'espère que cet article vous a donné les bases pour commencer à contribuer et qu'il vous donnera du courage pour vous lancez ! :(fas fa-rocket):  
