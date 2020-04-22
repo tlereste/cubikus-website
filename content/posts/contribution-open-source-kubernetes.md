@@ -22,7 +22,7 @@ Tout a commencé l'année dernière, lors d'un entretien d'embauche pour un post
 Au fil de la discussion avec le recruteur, celui-ci m'a sorti une phrase qui m'a beaucoup fait réfléchir :  
 > ... ici nous recherchons une personne qui, par exemple, serait capable de faire une contribution au projet Kubernetes afin d'y corriger un bug ou y ajouter une petite fonctionnalité...
 
-Après une semaine de réflexion et doutant souvent de compétence et succès (je souffre du [syndrome de l'imposteur](https://www.duchess-france.org/jai-teste-syndrome-de-limposteur)), je me suis dit, et pourquoi pas moi ?  
+Après une semaine de réflexion et doutant souvent de mes compétences et succès : je souffre du [syndrome de l'imposteur](https://www.duchess-france.org/jai-teste-syndrome-de-limposteur). Je me suis dit, et pourquoi pas moi ?  
 
 J'ai donc pris ça comme objectif et défi personnel et je me suis lancé dans l'aventure !  
   
@@ -34,7 +34,7 @@ J'y suis parvenu et ma première petite pull request (PR) a été intégrée à 
 
 Dans cet article, je ferai un résumé des étapes pour effectuer votre première contribution au projet Kubernetes mais je ne décrirai pas l'architecture et le code du projet. 
 J'ai volontairement omis ou raccourci des passages afin d'avoir un article simple.  
-Vous pourrez trouver une documentation du contributeur complète et bien plus vaste ici : [Kubernetes developer guide](https://github.com/kubernetes/community/tree/master/contributors/devel#readme)  
+Vous pourrez trouver une documentation du contributeur complète et bien plus vaste ici : [Kubernetes developer guide](https://github.com/kubernetes/community/tree/master/contributors/devel#readme).  
 
 ### Créer un compte Github  
 
@@ -48,7 +48,7 @@ Kubernetes y fut intégré en tant que premier projet.
 Nous avons donc Kubernetes faisant partie de la **CNCF**, qui elle-même fait partie de la **Linux foundation**.  
 
 Pour contribuer sur le projet, il faut signer une licence, la **CNCF Individual Contributor License Agreement** de la Linux foundation.
-Pour cela, suivez la procédure suivante : [The Contributor License Agreement](https://github.com/kubernetes/community/blob/master/CLA.md)  
+Pour cela, suivez la procédure suivante : [The Contributor License Agreement](https://github.com/kubernetes/community/blob/master/CLA.md).  
 
 ### Forker le projet 
 
