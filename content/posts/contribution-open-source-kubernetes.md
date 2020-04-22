@@ -280,9 +280,9 @@ Cela correspond à des issues assez simples taggées par les membres du projet.
   
 {{< image src="/images/contribution-open-source-kubernetes/good-first-issue-kubernetes.png" title="Kubernetes good first issue" >}}
   
-Il existe aussi un compte Twitter [goodfirstissue](https://twitter.com/goodfirstissue) qui tweet automatiquement les nouvelles `good first issue` de certains projets.
-
 Si vous souhaitez simplement aider quelqu'un sur un problème ou une question, effectuez une recherche avec le label `help wanted`.  
+
+En fonction de vos affinités, vous pouvez aussi effectuer des recherches par SIG, avec le label `sig/<nom du sig>`. Par exemple, `sig/autoscaling`.  
 
 ## À vous de jouer !
 
