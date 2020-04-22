@@ -2,10 +2,10 @@
 title: "Mes conseils pour une 1ère contribution au projet Kubernetes"
 date: 2020-04-22T16:00:00+01:00
 draft: false
-description: "Après avoir effectuer ma première pull request sur le projet Kubernetes, 
-voici mes conseils et mon retour d'expérience"
+description: "Après avoir effectué ma première pull request sur le projet Kubernetes, 
+voici mon retour d'expérience et mes conseils"
 
-tags: ["kubernetes", "opensource", "github"]
+tags: ["kubernetes", "open source", "github"]
 
 toc: true
 
@@ -56,8 +56,8 @@ Cela consiste à faire une copie personnelle du projet sur laquelle vous pourrez
 À la différence d'un clone qui permettrait de récupérer le projet sur votre poste local, mais vous empêcherait de pusher des modifications sur celui-ci.  
 
 Pour effectuer le fork :
-- aller sur le projet : `https://github.com/kubernetes/kubernetes`  
-- cliquer sur le bouton **Fork** en haut à droite de la page
+- allez sur le projet : `https://github.com/kubernetes/kubernetes`  
+- cliquez sur le bouton **Fork** en haut à droite de la page
 - après quelques de secondes, le repository sera présent dans votre profil, exemple : `https://github.com/tlereste/kubernetes`  
 
 ### Cloner votre projet 
@@ -104,8 +104,8 @@ description, version de Kubernetes utilisée...
 Après sa création, l'issue sera catégorisée par [Special Interest Group](https://github.com/kubernetes/community/blob/master/sig-list.md) ou **SIG**, c'est-à-dire des groupes fonctionnels et/ou techniques avec des leaders, newsletters, channel slack et réunions propres.  
 
 Quelques exemples de SIG :  
-- sig cli : traite tout ce qui est lié au client kubectl et ses outils associés
-- sig intrusmentation : couvre les meilleures pratiques pour l'observabilité des clusters
+- sig cli : traite tout ce qui est lié au client Kubectl et ses outils associés
+- sig instrumentation : couvre les meilleures pratiques pour l'observabilité des clusters
 - sig release : assure la qualité des releases
 - ...
 
@@ -118,11 +118,11 @@ Ensuite, assignez-vous cette issue avec le commentaire `/assign`.
 ## Création de la pull request    
 
 Voici les étapes de création :  
-- créer une nouvelle branche git à partir du clone de votre fork
-- effectuer les modifications de code / fichiers sur cette branche
-- commiter et pusher ces modifications 
+- créez une nouvelle branche git à partir du clone de votre fork
+- effectuez les modifications de code / fichiers sur cette branche
+- commitez et pusher ces modifications 
 - sur la page Github du Fork du repo Kubernetes (exemple : https://github.com/tlereste/kubernetes) vous aurez ainsi la possibilité de créer une pull request
-- un template sera disponible lors de la création votre PR. Pensez bien à référencer l'issue liée avec le # suivi du numéro de l'issue
+- un template sera disponible lors de la création de votre PR. Pensez bien à référencer l'issue liée avec le # suivi du numéro de l'issue
 
 Quelques conseils et astuces à utiliser lors de votre contribution :    
 
@@ -135,8 +135,8 @@ Si vous n'êtes pas familier avec ce langage :
 - mais rien ne remplace un bon livre comme [Go In Action](https://www.manning.com/books/go-in-action) par exemple !
 
 Lors du développement et avant d'effectuer votre PR, pensez à :  
-- lancer les tests avec la commande : `go test` ou `make test`
-- vérifier que le code est bien formaté avec l'outil [gofmt](https://golang.org/cmd/gofmt).
+- lancez les tests avec la commande : `go test` ou `make test`
+- vérifiez que le code est bien formaté avec l'outil [gofmt](https://golang.org/cmd/gofmt).
 Ces étapes sont décrites dans [le guide du développement officiel](https://github.com/kubernetes/community/blob/master/contributors/devel/development.md).
 
 ### La communication
@@ -240,9 +240,9 @@ Ce repo est vertigineux, il contient de nombreuses issues, beaucoup de contribut
 - 2003 issues ouvertes 
 - 895 pull request en cours
 
-C'est très difficile d'accéder à une nouvelle issue avant qu'une personne avec plus de connaissances ou ou plus expérimenté ne la prenne en charge.
+C'est très difficile d'accéder à une nouvelle issue avant qu'une personne avec plus de connaissances ou plus expérimentée ne la prenne en charge.
 
-De plus, dans mon cas, le processus de prise en charge et relecture de l'issue a été très long. Cela s'explique par le fait que les mainteneurs du projet étaient occupés à créer la release de la version 1.17 de Kubernetes et aussi au fait que mon issue concernait une fontionnalité non critique et non prioritaire.  
+De plus, dans mon cas, le processus de prise en charge et relecture de l'issue a été très long. Cela s'explique par le fait que les mainteneurs du projet étaient occupés à créer la release de la version 1.17 de Kubernetes et aussi au fait que mon issue concernait une fonctionnalité non critique et non prioritaire.  
 
 Pour information, ma [pull request](https://github.com/kubernetes/kubernetes/pull/82333) a été :
 - créée le 4 septembre  
@@ -257,8 +257,8 @@ Ce qui fait une durée totale de 4 mois. Soyez patient !
 
 Pour débuter, et ça n'engage que moi, contribuez sur des repos plus petits de l'organisation Kubernetes plutôt que sur le principal.  
 Après cette 1ère PR, j'ai choisi de contribuer sur ces autres projets :  
-- kube-state-metrics : génére des métriques au format Prometheus de l'état des objets Kubernetes  
-- krew et krew-index : gestionnaire de paquets pour les plugins de kubectl 
+- kube-state-metrics : génère des métriques au format Prometheus de l'état des objets Kubernetes  
+- krew et krew-index : gestionnaire de paquets pour les plugins de Kubectl 
 
 Pour Krew, j'ai par exemple modifié la documentation pour y ajouter [l'outil Popeye](https://thibault-lereste.fr/2020/04/kubernetes-popeye/).  
 
@@ -270,7 +270,7 @@ Par exemple :
 - ...
 
 Des projets plus petits seront plus faciles à appréhender, aussi bien au niveau de l'architecture, qu'au niveau fonctionnel. 
-De plus, vous serez moins en concurence avec d'autres personnes, vous aurez plus de temps pour choisir une issue, des feedbacks plus rapides sur vos pull requests, 
+De plus, vous serez moins en concurrence avec d'autres personnes, vous aurez plus de temps pour choisir une issue, des feedbacks plus rapides sur vos pull requests, 
 bref que des avantages !  
 
 #### Sélection de l'issue
@@ -284,6 +284,6 @@ Il existe aussi un compte Twitter [goodfirstissue](https://twitter.com/goodfirst
 
 Si vous souhaitez simplement aider quelqu'un sur un problème ou une question, effectuez une recherche avec le label `help wanted`.  
 
-## A vous de jouer !
+## À vous de jouer !
 
 J'espère que cet article vous a donné les bases pour commencer à contribuer et qu'il vous donnera du courage pour vous lancer ! :(fas fa-rocket):  
