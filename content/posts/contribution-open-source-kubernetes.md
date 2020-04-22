@@ -25,8 +25,8 @@ Après une semaine de réflexion et doutant souvent de compétence et succès (j
 
 J'ai donc pris ça comme objectif et défi personnel et je me suis lancé dans l'aventure !  
   
-{{< admonition success "Avec succès" >}}
-J'y suis parvenu et ma pull request (PR) a été intégrée à la version 1.18 du projet Kubernetes : https://github.com/kubernetes/kubernetes/pull/82333  
+{{< admonition success "Victoire !" >}}
+J'y suis parvenu et ma première petite pull request (PR) a été intégrée à la version 1.18 du projet Kubernetes : https://github.com/kubernetes/kubernetes/pull/82333  
 {{< /admonition >}}
   
 ## Prérequis : mise en place de votre environnement
@@ -114,9 +114,16 @@ Vous avez trouvé une issue qui vous plait, pensez tout d'abord à vérifier qu'
 Ensuite, assignez-vous cette issue avec le commentaire `/assign`.
   
   
-## La contribution    
+## Création de la pull request    
 
-Voici quelques conseils et astuces à utiliser lors de votre contribution.  
+Voici les étapes de création :  
+- créer une nouvelle branche git à partir du clone de votre fork
+- effectuer les modifications de code / fichiers sur cette branche
+- commiter et pusher ces modifications 
+- sur la page Github du Fork du repo Kubernetes (ex: https://github.com/tlereste/kubernetes) vous aurez ainsi la possibilité de créer une pull request
+- un template sera disponible lors de la création votre PR. Pensez bien à référencer l'issue liée avec le # suivi du numéro de l'issue
+
+Voici quelques conseils et astuces à utiliser lors de votre contribution :    
 
 ### Le code
 
@@ -176,7 +183,7 @@ Cela veut dire fusionner plusieurs commits en un seul afin de garder un historiq
 Voici un très bon article indiquant comment effectuer cette action : [comment squasher ses commits](https://www.ekino.com/articles/comment-squasher-efficacement-ses-commits-avec-git).
  
 
-## Et après la pull request ?
+## Et après avoir soumis la pull request ?
 
 ### CI / CD
 
@@ -208,7 +215,7 @@ Ensuite, un **approver** merge la PR avec le commentaire `/approve`.
 ### Faire vivre la PR
 
 Si votre PR est bloquée ou si vous avez besoin d'aide, vous pouvez :  
-- dans Github, relancer une personne en spécifiant son username préfixé d'un @ afin qu'elle soit notifiée     
+- sur Github, relancer une personne en spécifiant son username préfixé d'un @ afin qu'elle soit notifiée     
 - il existe aussi une grande communauté sur le **Slack** officiel : https://kubernetes.slack.com. Contacter la personne directement ou demander de l'aide ou une relecture sur le channel correspondant.
 
 Quelques exemples de channels utiles :  
