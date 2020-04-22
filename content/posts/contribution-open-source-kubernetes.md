@@ -22,11 +22,11 @@ Tout a commencé l'année dernière, lors d'un entretien d'embauche pour un post
 Au fil de la discussion avec le recruteur, celui-ci m'a sorti une phrase qui m'a beaucoup fait réfléchir :  
 > ... ici nous recherchons une personne qui, par exemple, serait capable de faire une contribution au projet Kubernetes afin d'y corriger un bug ou y ajouter une petite fonctionnalité...
 
-Après une semaine de réflexion et doutant souvent de mes compétences et succès : je souffre du [syndrome de l'imposteur](https://www.duchess-france.org/jai-teste-syndrome-de-limposteur). Je me suis dit, et pourquoi pas moi ?  
+Après une semaine de réflexion et doutant souvent de mes compétences et succès - [syndrome de l'imposteur](https://www.duchess-france.org/jai-teste-syndrome-de-limposteur), quand tu nous tiens ! - je me suis dit, et pourquoi pas moi ?  
 
 J'ai donc pris ça comme objectif et défi personnel et je me suis lancé dans l'aventure !  
   
-{{< admonition success "Victoire !" >}}
+{{< admonition success "Spoiler" >}}
 J'y suis parvenu et ma première petite pull request (PR) a été intégrée à la version 1.18 du projet Kubernetes : https://github.com/kubernetes/kubernetes/pull/82333  
 {{< /admonition >}}
   
@@ -64,7 +64,7 @@ Pour effectuer le fork :
 
 Ensuite, vous pourrez cloner votre projet précédemment forké, ce qui vous permettra d'être libre sur les modifications à y apporter.  
 
-Vous pouvez cloner votre projet avec git avec la commande:  
+Vous pouvez cloner votre projet avec Git à l'aide de la commande :  
 ```
 git clone https://github.com/tlereste/kubernetes.git .
 ``` 
@@ -121,15 +121,14 @@ Voici les étapes de création :
 - créer une nouvelle branche git à partir du clone de votre fork
 - effectuer les modifications de code / fichiers sur cette branche
 - commiter et pusher ces modifications 
-- sur la page Github du Fork du repo Kubernetes (ex: https://github.com/tlereste/kubernetes) vous aurez ainsi la possibilité de créer une pull request
+- sur la page Github du Fork du repo Kubernetes (exemple : https://github.com/tlereste/kubernetes) vous aurez ainsi la possibilité de créer une pull request
 - un template sera disponible lors de la création votre PR. Pensez bien à référencer l'issue liée avec le # suivi du numéro de l'issue
 
-Et quelques conseils et astuces à utiliser lors de votre contribution :    
+Quelques conseils et astuces à utiliser lors de votre contribution :    
 
 ### Le code
 
-Kubernetes est développé en [Golang](https://golang.org) (Go).  
-C'est aussi le cas pour la majorité des projets CNCF comme on peut le voir [ici](https://k8s.devstats.cncf.io/d/67/licenses-and-programming-languages).
+Kubernetes est développé en [Golang](https://golang.org) (Go). C'est aussi le cas pour la majorité des projets CNCF comme on peut le voir [ici](https://k8s.devstats.cncf.io/d/67/licenses-and-programming-languages).
 
 Si vous n'êtes pas familier avec ce langage :
 - le tutoriel [A Tour of Go](https://tour.golang.org) est disponible sur le site officiel  
@@ -157,7 +156,7 @@ il est donc très important d'être poli, précis et clair dans les échanges qu
 Voici quelques commandes utiles pour la réalisation de votre PR.  
 
 #### Configurer votre username et email
-Il faut configurer les mêmes utilisées sur Github (et pour signer la CLA de la Linux foundation).  
+Il faut configurer dans Git les mêmes identifiants que ceux utilisés pour Github et pour signer la CLA de la Linux foundation.  
 ```
 git config --global user.name "tlereste"  
 git config --global user.email lereste.thibault@gmail.com  
@@ -191,7 +190,7 @@ Voici un très bon article indiquant comment effectuer cette action : [comment s
 Le processus d'intégration / déploiement continue (CI / CD) est effectué par [Prow](https://github.com/kubernetes/test-infra/blob/master/prow/README.md).
 C'est un outil dédié et développé par le projet Kubernetes.  
 Il fonctionne notamment en mode **ChatOps**. 
-Cela signifie qu'en saisissant certains mots clés dans les commentaires, Prow déclenchera des actions qui sont décrite ici : [Commandes Prow](https://prow.k8s.io/command-help?repo=kubernetes%2Fkubernetes).  
+Cela signifie qu'en saisissant certains mots clés dans les commentaires, Prow déclenchera des actions qui sont décrites ici : [Commandes Prow](https://prow.k8s.io/command-help?repo=kubernetes%2Fkubernetes).  
 Afin d'avoir un côté visuel à tout cela, un robot nommé [@k8s-ci-robot](https://github.com/k8s-ci-robot) fera le lien entre votre PR et Prow.
   
 {{< image src="/images/contribution-open-source-kubernetes/prow-robot-kubernetes.png" title="Kubernetes prow robot" >}}
@@ -207,7 +206,7 @@ La liste des reviewers et approvers est visible ici :
 - [OWNERS](https://github.com/kubernetes/kubernetes/blob/master/OWNERS) pour tous les projets
 - [OWNERS_ALIASES](https://github.com/kubernetes/kubernetes/blob/master/OWNERS_ALIASES) pour les SIG
   
-Lorsqu'une pull request est effectuée, elle sera automatiquement assignée à 2 **reviewers** et 1 **approver** les plus à même de la traiter.
+Lorsqu'une pull request est effectuée, elle sera automatiquement assignée à 2 **reviewers** et 1 **approver** considérés comme les plus à même de la traiter.
 Si vous souhaitez l'assigner à une personne en plus, vous pouvez saisir le commentaire `/assign @username`.
   
 Un **reviewer** doit valider la PR avec le commentaire `/lgtm` qui signifie **look good too me**.
@@ -241,7 +240,7 @@ Ce repo est vertigineux, il contient de nombreuses issues, beaucoup de contribut
 - 2003 issues ouvertes 
 - 895 pull request en cours
 
-C'est très difficile d'accéder à une nouvelle issue avant qu'une personne avec une plus grande connaissance ou plus expérimenté ne la prenne en charge.
+C'est très difficile d'accéder à une nouvelle issue avant qu'une personne avec plus de connaissances ou ou plus expérimenté ne la prenne en charge.
 
 De plus, dans mon cas, le processus de prise en charge et relecture de l'issue a été très long. Cela s'explique par le fait que les mainteneurs du projet étaient occupés à créer la release de la version 1.17 de Kubernetes et aussi au fait que mon issue concernait une fontionnalité non critique et non prioritaire.  
 
@@ -285,6 +284,6 @@ Il existe aussi un compte Twitter [goodfirstissue](https://twitter.com/goodfirst
 
 Si vous souhaitez simplement aider quelqu'un sur un problème ou une question, effectuez une recherche avec le label `help wanted`.  
 
-## A vous !
+## A vous de jouer !
 
-J'espère que cet article vous a donné les bases pour commencer à contribuer et qu'il vous donnera du courage pour vous lancez ! :(fas fa-rocket):  
+J'espère que cet article vous a donné les bases pour commencer à contribuer et qu'il vous donnera du courage pour vous lancer ! :(fas fa-rocket):  
