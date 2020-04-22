@@ -3,7 +3,7 @@ title: "Mes conseils pour une 1ère contribution au projet Kubernetes"
 date: 2020-04-22T16:00:00+01:00
 draft: false
 description: "Après avoir effectuer ma première pull request sur le projet Kubernetes, 
-voici mes conseils et mon retour d'expérience pour vous aider à faire de même"
+voici mes conseils et mon retour d'expérience"
 
 tags: ["kubernetes", "opensource", "github"]
 
