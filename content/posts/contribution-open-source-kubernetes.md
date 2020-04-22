@@ -1,10 +1,11 @@
 ---
 title: "Mes conseils pour une 1ère contribution au projet Kubernetes"
-date: 2020-04-19T16:00:00+01:00
+date: 2020-04-22T16:00:00+01:00
 draft: false
-description: "Mes conseils pour une 1ère contribution au projet Kubernetes"
+description: "Après avoir effectuer ma première pull request sur le projet Kubernetes, 
+voici mes conseils et mon retour d'expérience pour vous aider à faire de même"
 
-tags: ["kubernetes", "opensource"]
+tags: ["kubernetes", "opensource", "github"]
 
 toc: true
 
@@ -123,7 +124,7 @@ Voici les étapes de création :
 - sur la page Github du Fork du repo Kubernetes (ex: https://github.com/tlereste/kubernetes) vous aurez ainsi la possibilité de créer une pull request
 - un template sera disponible lors de la création votre PR. Pensez bien à référencer l'issue liée avec le # suivi du numéro de l'issue
 
-Voici quelques conseils et astuces à utiliser lors de votre contribution :    
+Et quelques conseils et astuces à utiliser lors de votre contribution :    
 
 ### Le code
 
@@ -278,7 +279,7 @@ bref que des avantages !
 Je vous conseille d'effectuer une recherche sur le label `good first issue`. 
 Cela correspond à des issues assez simples taggées par les membres du projet.  
   
-![kubernetes good first issue](images/contribution-open-source-kubernetes/good-first-issue-kubernetes.png)  
+{{< image src="/images/contribution-open-source-kubernetes/good-first-issue-kubernetes.png" title="Kubernetes good first issue" >}}
   
 Il existe aussi un compte Twitter [goodfirstissue](https://twitter.com/goodfirstissue) qui tweet automatiquement les nouvelles `good first issue` de certains projets.
 
