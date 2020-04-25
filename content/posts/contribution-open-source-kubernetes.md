@@ -165,7 +165,7 @@ git config --global user.email lereste.thibault@gmail.com
 #### Maintenir votre fork à jour :
 ```
 # A partir de votre fork cloné, ajout du "upstream" du repository distant
-git remote add upstream git://github.com/tlereste/kubernetes
+git remote add upstream git@github.com:kubernetes/kubernetes.git  
 git fetch upstream
 
 # Si ce n'est pas le cas, switch sur votre branche master
