@@ -20,9 +20,9 @@ images:
 Après 2 ans de pratique de Kubernetes dans le cadre de mon travail et [avoir contribué à ce projet](https://thibault-lereste.fr/2020/04/contribution-open-source-kubernetes/),
 j'ai décidé de passer les certifications [CKAD](https://www.cncf.io/certification/ckad/) et [CKA](https://www.cncf.io/certification/cka/) de la CNCF afin de valider mes compétences.
 
-Cet article concerne uniquement la certification CKAD.  
+Cet article concerne uniquement la certification **CKAD**.  
 
-Il existe beaucoup d'autres articles de blog traitant de ce sujet, mais ils sont principalement en anglais. J'ai donc choisi de rédiger cet article pour vous partager mon expérience, en français et sur la dernière version de la certification (notamment Kubernetes 1.18).  
+Il existe beaucoup d'autres articles de blog traitant de ce sujet, mais ils sont principalement en anglais. J'ai donc choisi de rédiger cet article pour vous partager mon expérience, en français et sur la dernière version de la certification (avec Kubernetes 1.18).  
 
 {{< image src="/images/certification-kubernetes-ckad/certificat-ckad-thibault-lereste.png" title="Certificat CKAD Thibault Le Reste" >}}
 
@@ -238,7 +238,7 @@ Voici une liste des principales commandes qui ont évolué :
 
 | Action                             | Commande k8s 1.18                                      | Commande k8s 1.17                                       |
 | -----------------------------------|--------------------------------------------------------|---------------------------------------------------------|
-| Créer un pod                       | kubectl run sample-pod                                       | kubectl run sample-pod --restart=Never            |
+| Créer un pod                       | kubectl run sample-pod                                       | `kubectl run sample-pod --restart=Never`            |
 | Créer un deployment                | kubectl create deploy sample-deploy                          | kubectl run sample-deploy                         |
 | Créer un job                       | kubectl create job sample-job                                | kubectl run sample-job --restart=OnFailure        |
 | Créer un cronjob                   | kubectl create cronjob sample-cronjob --schedule="* * * * *" | kubectl run sample-cronjob --schedule="* * * * *" |
@@ -384,7 +384,7 @@ le site [crontab.guru](https://crontab.guru) vous sera utile.
 
 Concernant les requests et limits d'un container : 
 - Pour le CPU, elles sont indiquées en millicpus (ou millicores). Un CPU équivaut à 1000 millicores. Exemple: `500m`
-- Pour la mémoire, elles sont indiquées en mebibytes. Exemple : `128MiB` ()  
+- Pour la mémoire, elles sont indiquées en mebibytes. Exemple : `128MiB` 
 
 {{< admonition warning "Attention" >}}
 Pour la mémoire, il ne faut pas confondre **MiB** avec **Mb** ou **Mo**
@@ -432,7 +432,7 @@ La [deuxième édition](https://www.manning.com/books/kubernetes-in-action-secon
 {{< image src="/images/certification-kubernetes-ckad/kubernetes-in-action.png" title="Kubernetes in action" >}}
 
 - [Kubernetes Up and Running](https://www.oreilly.com/library/view/kubernetes-up-and/9781491935668) 
-écrit par Kelsey Hightower, Brendan Burns et Joe Beda au éditions Oreilly.  
+écrit par Kelsey Hightower, Brendan Burns et Joe Beda aux éditions Oreilly.  
 
 {{< image src="/images/certification-kubernetes-ckad/kubernetes-up-and-running.png" title="Kubernetes up and running" >}}
 
