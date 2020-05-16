@@ -15,7 +15,7 @@ images:
 
 <!--more-->
 
-### Pourquoi j'ai passé cette certification ?  
+## Pourquoi j'ai passé cette certification ?  
 
 Après 2 ans de pratique de Kubernetes dans le cadre de mon travail et [avoir contribué à ce projet](https://thibault-lereste.fr/2020/04/contribution-open-source-kubernetes/),
 j'ai décidé de passer les certifications [CKAD](https://www.cncf.io/certification/ckad/) et [CKA](https://www.cncf.io/certification/cka/) de la CNCF afin de valider mes compétences.
