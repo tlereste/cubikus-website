@@ -15,7 +15,7 @@ images:
 
 <!--more-->
 
-## Pourquoi j'ai passé cette certification ?  
+## Pourquoi j'ai passé cette certif ?  
 
 Après 2 ans de pratique de Kubernetes dans le cadre de mon travail et [avoir contribué à ce projet](https://thibault-lereste.fr/2020/04/contribution-open-source-kubernetes/),
 j'ai décidé de passer les certifications [CKAD](https://www.cncf.io/certification/ckad/) et [CKA](https://www.cncf.io/certification/cka/) de la CNCF afin de valider mes compétences.
@@ -33,8 +33,8 @@ Il existe beaucoup d'autres articles de blog traitant de ce sujet, mais ils sont
 
 Depuis le 9 janvier 2020, cette certification [est valable 3 ans](https://www.cncf.io/blog/2020/01/09/certified-kubernetes-application-developer-ckad-certification-is-now-valid-for-3-years) au lieu de 2 ans auparavant.   
 Après s'y être inscrit, vous avez 1 an pour choisir une date de passage.  
-Si vous échouez, vous aurez le droit à un nouvel essai sans repayer l'inscription.  
-Le tarif à l'inscription est de 300$. Cependant, il y a souvent des réductions disponibles, pour ma part j'ai eu 30% de réduction.   
+Si vous échouez, **vous aurez le droit à un nouvel essai** sans repayer l'inscription.  
+Le tarif à l'inscription est de **300$**. Cependant, il y a souvent des réductions disponibles, pour ma part j'ai eu 30% de réduction.   
 
 Il faut au maximum 36 heures pour otenir les résultats de l'examen.     
 De mon côté, je les ai obtenu un peu avant, mais tout de même au bout de 33h.  
@@ -66,13 +66,14 @@ Core Concepts (13%)
 - Understand API Primitives
 - Create and configure basic pods
 
-Le temps étant compté, il faudra donc bien choisir par quelles questions commencer, en fonction de leur pourcentage et complexité. Vous pouvez, par exemple, répondre aux questions dans le désordre ou revenir sur une question que vous avez laissée de côté.
+Le temps étant compté, il faudra donc bien choisir par quelles questions commencer, en fonction de leur pourcentage et complexité. 
+Vous pouvez, par exemple, répondre aux questions dans le désordre ou revenir sur une question que vous avez laissée de côté.
 
 Lors de l'examen, vous aurez le droit à deux onglets sur votre navigateur :
  - un onglet pour les questions / terminal
- - un seul onglet pour la [documentation officielle de Kubernetes](https://kubernetes.io/docs/home/)
+ - un autre onglet pour la [documentation officielle de Kubernetes](https://kubernetes.io/docs/home/)
  
- Il est donc nécessaire de bien connaitre cette documentation et d'utiliser au maximum les commandes impératives avec le client `kubectl`.  
+Il est donc nécessaire de bien connaitre cette documentation et d'utiliser au maximum les commandes impératives avec le client `kubectl`.  
 Un bloc note est aussi disponible, utilisez-le à bon escient pour noter les questions que vous avez réussies, esquivées, 
 celles pour lesquelles vous êtes bloquées ainsi que le pourcentage des questions associé. 
 
@@ -100,14 +101,16 @@ En réalité, l'heure UTC+2 été bien prise en compte, mais l'affichage était 
 
 - **Get Candidate Handbook :** document qui référence toutes les informations pratiques de la certification. 
 Notamment avoir une pièce d'identité non périmée.  
-Pour information, ma carte identité datait de plus de 10 ans, mais la [dérogation de validité de 15 ans](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Duree-de-validite-de-la-CNI) a bien été prise en compte.
 
+{{< admonition info "Info" >}}
+Ma carte identité datait de plus de 10 ans, mais la [dérogation de validité de 15 ans](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Duree-de-validite-de-la-CNI) a bien été prise en compte.
+{{< /admonition >}}
 
 ## Configuration de l'environnement 
 
 Au début, de l'examen, vous devrez prendre quelques petites minutes pour configurer votre environnement.  
 
-### Editeur de ~~texte~~ yaml et configuration
+### Editeur de texte et configuration
 
 J'ai utilisé l'éditeur **Vim** étant plus à l'aide avec celui-ci. 
 Il est bien sûr possible d'utiliser d'autres éditeurs comme Nano.  
@@ -165,7 +168,7 @@ Pour un aperçu global des commandes, vous pouvez prendre connaissance du [vim c
 
 Pour la mise en pratique, il existe ce [tutoriel interactif](https://www.openvim.com/tutorial.html) !
 
-### Création d'alias et autocomplétion pour Kubectl
+### Alias et autocomplétion pour Kubectl
 
 Je vous conseille de créer un alias pour le client kubectl et activer l'autocomplétion [comme décrit dans la documentation officielle](https://kubernetes.io/docs/tasks/tools/install-kubectl/#enable-kubectl-autocompletion).
 
@@ -188,7 +191,8 @@ Vous pouvez aussi créer d'autres alias, comme par exemple :
 
 ### Changement de contexte et namespace
 
-Il vous sera demandé à chaque question de changer de contexte, pour changer de noeud.  La commande permettant de faire cela est affichée au début de chaque question :  
+Il vous sera demandé à chaque question de changer de contexte, pour changer de noeud.  
+Pas de panique, la commande permettant de faire cela est affichée au début de chaque question :  
 ```
 kubectl config use-context <context>
 ```
@@ -202,23 +206,23 @@ kubectl config set-context --current --namespace <namespace>
 
 ### Création des ressources
 
-Afin de gagner du temps, utilisez les noms courts des ressources, par exemple :
+Afin de gagner du temps, utilisez les alias abrégés des ressources, par exemple :
 ```
-k get ns
+kubectl get ns
 ```
 plutôt que :  
 ```
 kubectl get namespaces
 ```
 
-La liste des noms courts est disponible avec :  
+La liste des alias abrégés est disponible avec :  
 ```
 kubectl api-resources
 ```
 
-Dans le cadre de cette certification, voici les principaux noms courts que j'utilise :  
+Dans le cadre de cette certification, voici les principaux noms abrégés que j'utilise :  
 
-| nom                                | nom court                    |
+| nom                                | nom abrégé                   |
 | -----------------------------------|------------------------------|
 | configmaps                         | cm                           |
 | cronjobs                           | cj                           |
@@ -229,7 +233,7 @@ Dans le cadre de cette certification, voici les principaux noms courts que j'uti
 | pods                               | po                           |
 | services                           | svc                          |
 
-Depuis le 23 avril 2020, l'examen se déroule sur la version de Kubernetes 1.18. 
+Depuis le **23 avril 2020**, l'examen se déroule sur la version de **Kubernetes 1.18**. 
 Voici une liste des principales commandes qui ont évolué :  
 
 | Action                             | Commande k8s 1.18                                      | Commande k8s 1.17                                       |
@@ -278,7 +282,7 @@ Exemple :
 kubectl delete pod sample-pod --force --gracefull=0  
 ```
 
-### Utilisation de templates de la documentation
+### Utilisation des templates de la documentation
 
 Il est parfois nécessaire d'utiliser les templates d'exemples de la documentation Kubernetes.  
 Par exemple, les persistents volumes ne peuvent pas être créés directement avec le client kubectl.
@@ -402,13 +406,10 @@ L'offre gratuite d'AWS n'inclut pas EKS.
 - [Microsoft Azure AKS](https://azure.microsoft.com/services/kubernetes-service) :  
 Crédit gratuit de 170 euros valable pendant 30 jours.  
 
-[Intégrer tweet google cloud]
-
 #### Les cloud providers "made in france"
 
 - [OVH Cloud Managed Kubernetes Service](https://www.ovhcloud.com/fr/public-cloud/kubernetes/) : 
 Cette solution est assez récente (un peu plus d'un an) et a un coût inférieur aux "géants du cloud". Crédit gratuit de 30 euros.
-
 - [Scaleway Kubernetes Kapsule](https://www.scaleway.com/fr/kubernetes-kapsule/) :  
 Cette solution, depuis récemment en version finale (moins de 2 mois), est la moins chère des offres que j'ai listées.
 
@@ -439,39 +440,39 @@ La [deuxième édition](https://www.manning.com/books/kubernetes-in-action-secon
 
 Pour se faire la main, voici une liste de quelques exercices gratuits que j'ai utilisé.
 
-**"CKAD exercises" de Dimitris-Ilias Gkanatsios :**  
+- **"CKAD exercises" de Dimitris-Ilias Gkanatsios :**  
 Les exercices incontournables recommandés par tous. Ils couvrent la majorité de l'examen.
 Vous devez être capables de les faire sans réfléchir : 
 https://github.com/dgkanatsios/CKAD-exercises  
 
-**"Kubernetes CKAD weekly challenges" :**  
+- **"Kubernetes CKAD weekly challenges" :**  
 Une liste de 13 "challenges" plus complets :  
 https://codeburst.io/kubernetes-ckad-weekly-challenges-overview-and-tips-7282b36a2681  
 
-**"CKAD practice exam" de Matthew Palmer :**  
+- **"CKAD practice exam" de Matthew Palmer :**  
 Un avant-goût de 5 questions d'un entraînement payant :  
 https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.html  
 
 ### Formation et exercices payants
 
-Je me suis exercé sur des examens blanc payant et c'est vraiment quelque chose que je conseille.  
+Je me suis exercé sur des examens blanc payant et c'est vraiment quelque chose que je conseille. 
 Pour 20 à 30 euros, on peut avoir accès à des exercices de qualité, soit à peine 10% du coût de la certification.  
 
 En voici quelques-un :  
 
-**[killer.sh](https://killer.sh/ckad)** :  
+- **[killer.sh](https://killer.sh/ckad)** :  
 C'est le simulateur d'examen que j'ai utilisé.
 Il y a 20 questions / problèmes et 2 heures pour les résoudre. 
 Ce simulateur ressemble beaucoup à l'examen réel et est parfait pour s'entraîner.  
 De plus, le cluster fourni est disponible durant 3 jours ce qui vous laisse le temps de faire et refaire les exercices.  
 Le tarif est de 29.99 euros mais vous avez une réduction de 20% à l'inscription.  
 
-**[kodekloud](https://kodekloud.com/courses/kubernetes-certification-course/lectures/6731363)** :  
+- **[kodekloud](https://kodekloud.com/courses/kubernetes-certification-course/lectures/6731363)** :  
 C'est une formation vidéo avec des 2 examens de tests. 
 Je ne connais pas le contenu de la formation, mais j'ai eu l'occasion de faire les tests et ils sont très pertinents. 
 Un abonnement au mois ou à l'année est disponible pour bénéficier de toutes les formations du site. 
 
-**[linux academy](https://linuxacademy.com/course/certified-kubernetes-application-developer-ckad/)** :  
+- **[linux academy](https://linuxacademy.com/course/certified-kubernetes-application-developer-ckad/)** :  
 Cette formation est unanimement conseillée. Elle contient 3 examens de tests. Je n'ai pas eu l'occasion de la tester.
 Il est possible de s'abonner au mois ou à l'année afin de bénéficier des formations de la linux academy.
 
@@ -481,7 +482,7 @@ De [nombreux articles de blog](https://lmgtfy.com/?q=ckad+exam+blog) sont dispon
 principalement en anglais avec des retours d'expérience et conseils pour passer la certification.  
 
 Pour poser des questions, ou être tenu informé des derniers articles de la communauté, 
-il existe un Slack officiel https://slack.k8s.io channel #ckad-exam-prep .
+il existe un [Slack officiel](https://slack.k8s.io) channel #ckad-exam-prep .
 
 ## Le jour de l'examen 
 
@@ -489,7 +490,7 @@ Voici les choses à savoir :
 - Il est possible de démarrer l'examen à partir de 15 min avant l'horaire prévu et jusqu'à 15 min après.  
 - Il faut préparer sa pièce d'identité, avoir un bureau vide, 
 vous aurez juste le droit d'avoir une bouteille d'eau sans étiquette/inscription et un verre d'eau.  
-- La pièce doit être fermée et vous devez être tout seul (les chats sont autorisées ;)) 
+- La pièce doit être fermée et vous devez être tout seul (les chats sont autorisés :(fas fa-cat):) 
 - Il ne faut pas masquer sa bouche, ni parler à voix haute.
 - La communication avec l'examinateur se fait en anglais, entièrement par chat.
 - L'examinateur vous demandera de montrer la pièce dans laquelle vous vous trouvez avec la webcam. 
