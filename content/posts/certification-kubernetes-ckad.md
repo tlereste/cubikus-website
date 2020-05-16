@@ -236,12 +236,12 @@ Dans le cadre de cette certification, voici les principaux noms abrégés que j'
 Depuis le **23 avril 2020**, l'examen se déroule sur la version de **Kubernetes 1.18**. 
 Voici une liste des principales commandes qui ont évolué :  
 
-| Action                             | Commande k8s 1.18                                      | Commande k8s 1.17                                       |
-| -----------------------------------|--------------------------------------------------------|---------------------------------------------------------|
-| Créer un pod                       | kubectl run sample-pod                                       | `kubectl run sample-pod --restart=Never`            |
-| Créer un deployment                | kubectl create deploy sample-deploy                          | kubectl run sample-deploy                         |
-| Créer un job                       | kubectl create job sample-job                                | kubectl run sample-job --restart=OnFailure        |
-| Créer un cronjob                   | kubectl create cronjob sample-cronjob --schedule="* * * * *" | kubectl run sample-cronjob --schedule="* * * * *" |
+| Action                             | Commande k8s 1.18                                                  | Commande k8s 1.17                                       |
+| -----------------------------------|--------------------------------------------------------------------|---------------------------------------------------------|
+| Créer un pod                       | ```kubectl run sample-pod```                                       | ```kubectl run sample-pod --restart=Never```            |
+| Créer un deployment                | ```kubectl create deploy sample-deploy```                          | ```kubectl run sample-deploy```                         |
+| Créer un job                       | ```kubectl create job sample-job```                                | ```kubectl run sample-job --restart=OnFailure```        |
+| Créer un cronjob                   | ```kubectl create cronjob sample-cronjob --schedule="* * * * *"``` | ```kubectl run sample-cronjob --schedule="* * * * *"``` |
 
 
 Plutôt que de créer les ressources directement, 
