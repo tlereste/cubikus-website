@@ -2,7 +2,7 @@
 title: "Comment j'ai obtenu la certification Kubernetes CKAD"
 date: 2020-05-18T16:00:00+01:00
 draft: false
-description: "Comment je me suis préparé pour réussir la certification Kubernetes CKAD"
+description: "Ma préparation pour réussir la certification Kubernetes CKAD"
 
 tags: ["kubernetes", "ckad", "cncf", "certification"]
 
@@ -36,8 +36,8 @@ Après s'y être inscrit, vous avez 1 an pour choisir une date de passage.
 Si vous échouez, **vous aurez le droit à un nouvel essai** sans repayer l'inscription.  
 Le tarif à l'inscription est de **300$**. Cependant, il y a souvent des réductions disponibles, pour ma part j'ai eu 30% de réduction.   
 
-Il faut au maximum 36 heures pour otenir les résultats de l'examen.     
-De mon côté, je les ai obtenu un peu avant, mais tout de même au bout de 33h.  
+Il faut au maximum 36 heures pour obtenir les résultats de l'examen.     
+De mon côté, je les ai obtenu un peu avant, mais tout de même au bout de 33 heures.  
 
 ### Aspect technique
 
@@ -70,11 +70,11 @@ Le temps étant compté, il faudra donc bien choisir par quelles questions comme
 Vous pouvez, par exemple, répondre aux questions dans le désordre ou revenir sur une question que vous avez laissée de côté.
 
 Lors de l'examen, vous aurez le droit à deux onglets sur votre navigateur :
- - un onglet pour les questions / terminal
- - un autre onglet pour la [documentation officielle de Kubernetes](https://kubernetes.io/docs/home/)
+ - Un onglet pour les questions / terminal
+ - Un autre onglet pour la [documentation officielle de Kubernetes](https://kubernetes.io/docs/home/)
  
 Il est donc nécessaire de bien connaitre cette documentation et d'utiliser au maximum les commandes impératives avec le client `kubectl`.  
-Un bloc note est aussi disponible, utilisez-le à bon escient pour noter les questions que vous avez réussies, esquivées, 
+Un bloc-note est aussi disponible, utilisez-le à bon escient pour noter les questions que vous avez réussies, esquivées, 
 celles pour lesquelles vous êtes bloquées ainsi que le pourcentage des questions associé. 
 
 La durée limitée de l'examen vous obligera à maitriser toutes vos actions sur le bout des doigts, 
@@ -84,7 +84,7 @@ c'est pourquoi vous trouverez plus tard une partie "Conseils et astuces" pour vo
 
 Il faut se rendre sur le site de la [Linux foundation](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/).  
 
-Après l'inscription, vous aurez une checklist à parcourir avec notamment : 
+Après l'inscription, vous aurez une check-list à parcourir avec notamment : 
 - **Check System Requirements :** lance une liste de vérification, indiquant si votre configuration système, navigateur, webcam... 
 est compatible pour l'examen. A savoir qu'il est nécessaire d'installer un plugin sur votre navigateur afin de partager votre écran. 
 De plus, il est indiqué une résolution d'écran minimale de 1280 x 800 mais la mienne de 1366 x 768 ne m'a pas posé problème.
@@ -110,12 +110,12 @@ Ma carte identité datait de plus de 10 ans, mais la [dérogation de validité d
 
 Au début, de l'examen, vous devrez prendre quelques petites minutes pour configurer votre environnement.  
 
-### Editeur de texte et configuration
+### Éditeur de texte et configuration
 
 J'ai utilisé l'éditeur **Vim** étant plus à l'aide avec celui-ci. 
 Il est bien sûr possible d'utiliser d'autres éditeurs comme Nano.  
 
-Avant d'utiliser Vim, il faut le paramétrer afin d'éditer au mieux les fichiers yaml.
+Avant d'utiliser Vim, il faut le paramétrer afin d'éditer au mieux les fichiers YAML.
 
 On édite le fichier vimrc :  
  ```
@@ -135,7 +135,7 @@ On applique ensuite la configuration :
 Explication des paramètres : 
 - `set ts=2` : ts signifie tabstop : Fixe la largeur affichée d'une tabulation à 2 espaces
 - `set sts` : sts signifie softtabstop : Insère ou supprime 2 espaces avec la touche tabulation ou retour arrière
-- `set sw=2` : sw signifie shiftwidth :  Nombre d'espaces utilisés lors de l'intendation > ou < 
+- `set sw=2` : sw signifie shiftwidth :  Nombre d'espaces utilisés lors de l'indentation > ou < 
 - `set et` : et signifie expandtab : En mode insertion : Remplace les tabulations par des espaces
 
 Il existe différents modes d'édition dans Vim, voici les 3 principaux :  
@@ -182,7 +182,7 @@ Activation de l'autocomplétion sur cet alias :
 echo 'complete -F __start_kubectl k' >>~/.bashrc
 ```
 
-Vous pouvez aussi créer d'autres alias, comme par exemple :  
+Vous pouvez aussi créer d'autres alias, comme :  
 `kgp` pour `kubect get pods`  
 `kgd` pour `kubectl get deploiement`  
 ...
@@ -285,7 +285,7 @@ kubectl delete pod sample-pod --force --gracefull=0
 ### Utilisation des templates de la documentation
 
 Il est parfois nécessaire d'utiliser les templates d'exemples de la documentation Kubernetes.  
-Par exemple, les persistents volumes ne peuvent pas être créés directement avec le client kubectl.
+Par exemple, les persistents volumes ne peuvent pas être créés directement avec le client Kubectl.
 Pour simplifier cette création, vous pouvez copier l'url du template et lancer la commande suivante :  
 ```
 wget -O- <url> > fichier.yaml  
@@ -332,7 +332,7 @@ template     <Object> -required-
 ttlSecondsAfterFinished      <integer>
 ```
 
-Au final, cela permet de savoir, par exemple, 
+Finalement, cela permet de savoir, par exemple, 
 qu'on peut utiliser le champ `parallelism` pour lancer des jobs en parallèle.
 
 Exemple :  
@@ -399,14 +399,14 @@ Pour vous exercer, il faut faudra un cluster Kubernetes. Différentes solutions 
 #### Les géants du cloud
 
 - [Google cloud GKE](https://cloud.google.com/kubernetes-engine) :  
-Crédit gratuit de 300 $ valable pendant 12 mois. 
+Crédit gratuit de 300 dollars valable pendant 12 mois. 
 De mon côté, un cluster d'un noeud n1-standard-1 me coûte 30 dollars / mois.
 - [Amazon AWS EKS](https://aws.amazon.com/eks) :  
 L'offre gratuite d'AWS n'inclut pas EKS.
 - [Microsoft Azure AKS](https://azure.microsoft.com/services/kubernetes-service) :  
 Crédit gratuit de 170 euros valable pendant 30 jours.  
 
-#### Les cloud providers "made in france"
+#### Les cloud providers "made in France"
 
 - [OVH Cloud Managed Kubernetes Service](https://www.ovhcloud.com/fr/public-cloud/kubernetes/) : 
 Cette solution est assez récente (un peu plus d'un an) et a un coût inférieur aux "géants du cloud". Crédit gratuit de 30 euros.
@@ -450,7 +450,7 @@ Une liste de 13 "challenges" plus complets :
 https://codeburst.io/kubernetes-ckad-weekly-challenges-overview-and-tips-7282b36a2681  
 
 - **"CKAD practice exam" de Matthew Palmer :**  
-Un avant-goût de 5 questions d'un entraînement payant :  
+Un avant-goût de 5 questions d'un examen blanc payant :  
 https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.html  
 
 ### Formation et exercices payants
@@ -460,21 +460,21 @@ Pour 20 à 30 euros, on peut avoir accès à des exercices de qualité, soit à 
 
 En voici quelques-un :  
 
-- **[killer.sh](https://killer.sh/ckad)** :  
+- **[Killer.sh](https://killer.sh/ckad)** :  
 C'est le simulateur d'examen que j'ai utilisé.
 Il y a 20 questions / problèmes et 2 heures pour les résoudre. 
 Ce simulateur ressemble beaucoup à l'examen réel et est parfait pour s'entraîner.  
 De plus, le cluster fourni est disponible durant 3 jours ce qui vous laisse le temps de faire et refaire les exercices.  
 Le tarif est de 29.99 euros mais vous avez une réduction de 20% à l'inscription.  
 
-- **[kodekloud](https://kodekloud.com/courses/kubernetes-certification-course/lectures/6731363)** :  
+- **[Kodekloud](https://kodekloud.com/courses/kubernetes-certification-course/lectures/6731363)** :  
 C'est une formation vidéo avec des 2 examens de tests. 
 Je ne connais pas le contenu de la formation, mais j'ai eu l'occasion de faire les tests et ils sont très pertinents. 
 Un abonnement au mois ou à l'année est disponible pour bénéficier de toutes les formations du site. 
 
-- **[linux academy](https://linuxacademy.com/course/certified-kubernetes-application-developer-ckad/)** :  
+- **[Linux academy](https://linuxacademy.com/course/certified-kubernetes-application-developer-ckad/)** :  
 Cette formation est unanimement conseillée. Elle contient 3 examens de tests. Je n'ai pas eu l'occasion de la tester.
-Il est possible de s'abonner au mois ou à l'année afin de bénéficier des formations de la linux academy.
+Il est possible de s'abonner au mois ou à l'année afin de bénéficier des formations de la Linux academy.
 
 ### Communauté CKAD
 
@@ -495,7 +495,7 @@ vous aurez juste le droit d'avoir une bouteille d'eau sans étiquette/inscriptio
 - La communication avec l'examinateur se fait en anglais, entièrement par chat.
 - L'examinateur vous demandera de montrer la pièce dans laquelle vous vous trouvez avec la webcam. 
 - Un récapitulatif de tout ce que vous devez savoir sera affiché dans le terminal. 
-Par exemple, il faut savoir que lors de l'examen, sur Windows il faut utiliser ctrl+insert pour copier et shift+insert (ou click droit coller) pour coller. 
+Par exemple, il faut savoir que lors de l'examen, sur Windows il faut utiliser ctrl+insert pour copier et shift+insert (ou clic droit coller) pour coller. 
 - Le temps restant n'est pas affiché précisément. 
 Il apparaît sous la forme d'une barre de progression qui décroît et change de couleur : verte puis orange et enfin rouge. 
 L'examinateur vous indiquera dans le chat quand il vous restera 1 h, 30 min et 10 min.
