@@ -37,7 +37,7 @@ Si vous échouez, **vous aurez le droit à un nouvel essai** sans repayer l'insc
 Le tarif à l'inscription est de **300$**. Cependant, il y a souvent des réductions disponibles, pour ma part j'ai eu 30% de réduction.   
 
 Il faut au maximum 36 heures pour obtenir les résultats de l'examen.     
-De mon côté, je les ai obtenues un peu avant, mais tout de même au bout de 33 heures.  
+De mon côté, je les ai obtenus un peu avant, mais tout de même au bout de 33 heures.  
 
 ### Aspect technique
 
@@ -144,7 +144,7 @@ Il existe différents modes d'édition dans Vim, voici les 3 principaux :
 - Mode ligne de commande : il faut être en mode normal et taper la touche `:`. Ce mode permet d'exécuter des commandes.
 
 Voici les principales commandes que j'utilise qui vous seront utiles. 
-Ces commandes se font en mode interactif :  
+Ces commandes se font en mode normal :  
 
 | Action                             | Commande                     |
 | -----------------------------------|------------------------------|
@@ -183,8 +183,8 @@ echo 'complete -F __start_kubectl k' >>~/.bashrc
 ```
 
 Vous pouvez aussi créer d'autres alias, comme :  
-`kgp` pour `kubect get pods`  
-`kgd` pour `kubectl get deploiement`  
+`kgp` pour `kubectl get pods`  
+`kgd` pour `kubectl get deployment`  
 ...
 
 ## Conseils et astuces
@@ -201,7 +201,7 @@ Chaque question se déroule dans un namespace particulier.
 Afin d'éviter d'utiliser le paramètre `-n <namespace>` lors de chaque commande, 
 je vous conseille de changer le namespace courant avec la commande :  
 ```
-kubectl config set-context --current --namespace <namespace>
+kubectl config set-context --current --namespace=<namespace>
 ```
 
 ### Création des ressources
@@ -271,7 +271,7 @@ kubectl create -f deploy-template.yaml
 
 ### Suppression rapide d'une ressource
 
-Lors de la suppression d'un pod ou deployement, 
+Lors de la suppression d'un pod ou deployment, 
 vous pouvez utiliser les paramètres suivants afin d'avoir une suppression instantanée :  
 ```
 --force --gracefull=0  
@@ -286,7 +286,7 @@ kubectl delete pod sample-pod --force --gracefull=0
 
 Il est parfois nécessaire d'utiliser les templates d'exemples de la documentation Kubernetes.  
 Par exemple, les persistents volumes ne peuvent pas être créés directement avec le client Kubectl.
-Pour simplifier cette création, vous pouvez copier l'url du template et lancer la commande suivante :  
+Pour simplifier cette création, vous pouvez copier l'url du template dans la documentation et lancer la commande suivante :  
 ```
 wget -O- <url> > fichier.yaml  
 ```
@@ -345,7 +345,7 @@ apiVersion: batch/v1
       parallelism: 2
 ```
 
-Pour afficher tous les champs directement, on peut utiliser aussi la commande :  
+Pour afficher tous les champs directement, on peut y ajouter le paramètre :  
 ```
 --recursive
 ```
@@ -358,9 +358,9 @@ kubectl explain job --recursive
 ### Recherche dans les logs et évènements 
 
 Pour rechercher rapidement dans les logs ou évènements,
-je vous conseille d'utiliser la commande `grep` avec les paramètres suivants :
+vous pouvez utiliser la commande `grep` avec les paramètres suivants :
 - `i` : pour ignorer la casse
-- `A` suivi d'un nombre : pour afficher les <nombre> lignes qui suivent le mot recherché
+- `A` suivi d'un nombre : pour afficher les "nombre" lignes qui suivent le mot recherché
 
 Par exemple, pour rechercher les 3 annotations d'un pod :
 ```
@@ -415,7 +415,7 @@ Cette solution, depuis récemment en version finale (moins de 2 mois), est la mo
 
 #### Le cluster local
 
-Pour monter facilement un cluster en local, je vous conseille le combo **K3S / K3D**.
+Pour monter facilement un cluster en local, il existe le combo **K3S / K3D**.
 - [K3S](https://k3s.io) est une version allégée de Kubernetes et est développé par Rancher.
 - [K3D](http://k3d.io) est un outil permettant de lancer K3S dans un container Docker : il s'agit d'un projet forké et maintenu par Rancher.
 
