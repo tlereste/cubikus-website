@@ -1,16 +1,16 @@
 ---
-title: ""
-date: 2020-05-15T16:00:00+01:00
+title: "Comment j'ai obtenu la certification Kubernetes CKAD"
+date: 2020-05-18T16:00:00+01:00
 draft: false
-description: ""
+description: "Comment je me suis préparé pour réussir la certification Kubernetes CKAD"
 
 tags: ["kubernetes", "ckad", "cncf", "certification"]
 
 toc: true
 
-featuredImage: "/images/certification-kubernetes-ckad/TODO.png"
+featuredImage: "/images/certification-kubernetes-ckad/certification-kubernetes-ckad-featured.png"
 images:
-- "/images/certification-kubernetes-ckad/TODO-twitter.png"
+- "/images/certification-kubernetes-ckad/certification-kubernetes-ckad-twitter.png"
 ---
 
 <!--more-->
@@ -159,7 +159,7 @@ Ces commandes se font en mode interactif :
 | Remplacer un mot                   | cw                           |
 | Remplacer un caractère             | r                            |
 | Supprimer un caractère             | x                            |
-| Indenter du texte                  | > à droite ou > à gauche     |
+| Indenter du texte                  | > à droite ou < à gauche     |
 | Sélectionner du texte              | v (sélection) v              |
 | Annuler la dernière commande       | u                            |
 | Enregistrer et quitter             | :wq!                         |
@@ -170,9 +170,9 @@ Pour la mise en pratique, il existe ce [tutoriel interactif](https://www.openvim
 
 ### Alias et autocomplétion pour Kubectl
 
-Je vous conseille de créer un alias pour le client kubectl et activer l'autocomplétion [comme décrit dans la documentation officielle](https://kubernetes.io/docs/tasks/tools/install-kubectl/#enable-kubectl-autocompletion).
+Je vous conseille de créer un alias pour le client **Kubectl** et activer l'autocomplétion [comme décrit dans la documentation officielle](https://kubernetes.io/docs/tasks/tools/install-kubectl/#enable-kubectl-autocompletion).
 
-Création d'un alias pour kubectl :  
+Création d'un alias pour Kubectl :  
 ```
 echo 'alias k=kubectl' >>~/.bashrc
 ```
@@ -191,7 +191,7 @@ Vous pouvez aussi créer d'autres alias, comme par exemple :
 
 ### Changement de contexte et namespace
 
-Il vous sera demandé à chaque question de changer de contexte, pour changer de noeud.  
+Il vous sera demandé à chaque question de changer de contexte, pour changer de noeud. 
 Pas de panique, la commande permettant de faire cela est affichée au début de chaque question :  
 ```
 kubectl config use-context <context>
@@ -260,7 +260,7 @@ Pour exporter le template au format YAML sans créer la ressource, il faut utili
 Attention, la commande précédente [est dépréciée](https://kubernetes.io/docs/setup/release/notes/#kubectl-1), mais elle fonctionne toujours avec la version Kubernetes 1.18 (celle de l'examen).  
 Cependant, un message de warning apparaîtra lors de son exécution. Vous pouvez l'ignorer ou utiliser la "nouvelle commande" :  
 ```
---dry-run=client -o yaml > file.yaml  
+--dry-run=client -o yaml > fichier.yaml  
 ```
 
 Exemple :  
