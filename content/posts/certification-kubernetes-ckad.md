@@ -37,7 +37,7 @@ Si vous échouez, **vous aurez le droit à un nouvel essai** sans repayer l'insc
 Le tarif à l'inscription est de **300$**. Cependant, il y a souvent des réductions disponibles, pour ma part j'ai eu 30% de réduction.   
 
 Il faut au maximum 36 heures pour obtenir les résultats de l'examen.     
-De mon côté, je les ai obtenu un peu avant, mais tout de même au bout de 33 heures.  
+De mon côté, je les ai obtenues un peu avant, mais tout de même au bout de 33 heures.  
 
 ### Aspect technique
 
@@ -87,7 +87,7 @@ Il faut se rendre sur le site de la [Linux foundation](https://training.linuxfou
 Après l'inscription, vous aurez une check-list à parcourir avec notamment : 
 - **Check System Requirements :** lance une liste de vérification, indiquant si votre configuration système, navigateur, webcam... 
 est compatible pour l'examen. A savoir qu'il est nécessaire d'installer un plugin sur votre navigateur afin de partager votre écran. 
-De plus, il est indiqué une résolution d'écran minimale de 1280 x 800 mais la mienne de 1366 x 768 ne m'a pas posé problème.
+De plus, il est demandé une résolution d'écran minimale de 1280 x 800 mais la mienne de 1366 x 768 ne m'a pas posée problème.
 
 - **Schedule Exam :** permet de planifier la date et heure de passage de son examen. 
 Dans mon cas, beaucoup de créneaux étaient disponibles, j'ai pu planifier une date 2 jours avant.  
@@ -108,7 +108,7 @@ Ma carte identité datait de plus de 10 ans, mais la [dérogation de validité d
 
 ## Configuration de l'environnement 
 
-Au début, de l'examen, vous devrez prendre quelques petites minutes pour configurer votre environnement.  
+Au début de l'examen, vous devrez prendre quelques petites minutes pour configurer votre environnement.  
 
 ### Éditeur de texte et configuration
 
@@ -133,15 +133,15 @@ On applique ensuite la configuration :
 ```
 
 Explication des paramètres : 
-- `set ts=2` : ts signifie tabstop : Fixe la largeur affichée d'une tabulation à 2 espaces
-- `set sts` : sts signifie softtabstop : Insère ou supprime 2 espaces avec la touche tabulation ou retour arrière
-- `set sw=2` : sw signifie shiftwidth :  Nombre d'espaces utilisés lors de l'indentation > ou < 
-- `set et` : et signifie expandtab : En mode insertion : Remplace les tabulations par des espaces
+- `set ts=2` : ts signifie tabstop. Fixe la largeur affichée d'une tabulation à 2 espaces
+- `set sts` : sts signifie softtabstop. Insère ou supprime 2 espaces avec la touche tabulation ou retour arrière
+- `set sw=2` : sw signifie shiftwidth. Nombre d'espaces utilisés lors de l'indentation > ou < 
+- `set et` : et signifie expandtab. En mode insertion, remplace les tabulations par des espaces
 
 Il existe différents modes d'édition dans Vim, voici les 3 principaux :  
 - Mode normal : c'est le mode par défaut.
 - Mode insertion : on y entre avec la touche `i` et le quitte avec la touche `ESC`. Ce mode permet de saisir du texte.  
-- Mode ligne de commande : il faut être en mode interactif et taper la touche `:`. Ce mode permet d'exécuter des commandes.
+- Mode ligne de commande : il faut être en mode normal et taper la touche `:`. Ce mode permet d'exécuter des commandes.
 
 Voici les principales commandes que j'utilise qui vous seront utiles. 
 Ces commandes se font en mode interactif :  
@@ -438,7 +438,7 @@ La [deuxième édition](https://www.manning.com/books/kubernetes-in-action-secon
 
 ### Exercices gratuits
 
-Pour se faire la main, voici une liste de quelques exercices gratuits que j'ai utilisé.
+Pour se faire la main, voici une liste de quelques exercices gratuits que j'ai utilisés.
 
 - **"CKAD exercises" de Dimitris-Ilias Gkanatsios :**  
 Les exercices incontournables recommandés par tous. Ils couvrent la majorité de l'examen.
@@ -455,10 +455,10 @@ https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.h
 
 ### Formation et exercices payants
 
-Je me suis exercé sur des examens blanc payant et c'est vraiment quelque chose que je conseille. 
+Je me suis exercé sur des examens blancs payants et c'est vraiment quelque chose que je conseille. 
 Pour 20 à 30 euros, on peut avoir accès à des exercices de qualité, soit à peine 10% du coût de la certification.  
 
-En voici quelques-un :  
+En voici quelques-uns :  
 
 - **[Killer.sh](https://killer.sh/ckad)** :  
 C'est le simulateur d'examen que j'ai utilisé.
@@ -468,12 +468,12 @@ De plus, le cluster fourni est disponible durant 3 jours ce qui vous laisse le t
 Le tarif est de 29.99 euros mais vous avez une réduction de 20% à l'inscription.  
 
 - **[Kodekloud](https://kodekloud.com/courses/kubernetes-certification-course/lectures/6731363)** :  
-C'est une formation vidéo avec des 2 examens de tests. 
+C'est une formation vidéo avec 2 examens blancs. 
 Je ne connais pas le contenu de la formation, mais j'ai eu l'occasion de faire les tests et ils sont très pertinents. 
 Un abonnement au mois ou à l'année est disponible pour bénéficier de toutes les formations du site. 
 
 - **[Linux academy](https://linuxacademy.com/course/certified-kubernetes-application-developer-ckad/)** :  
-Cette formation est unanimement conseillée. Elle contient 3 examens de tests. Je n'ai pas eu l'occasion de la tester.
+Cette formation est unanimement conseillée. Elle contient 3 examens blancs. Je n'ai pas eu l'occasion de la tester.
 Il est possible de s'abonner au mois ou à l'année afin de bénéficier des formations de la Linux academy.
 
 ### Communauté CKAD
@@ -495,7 +495,7 @@ vous aurez juste le droit d'avoir une bouteille d'eau sans étiquette/inscriptio
 - La communication avec l'examinateur se fait en anglais, entièrement par chat.
 - L'examinateur vous demandera de montrer la pièce dans laquelle vous vous trouvez avec la webcam. 
 - Un récapitulatif de tout ce que vous devez savoir sera affiché dans le terminal. 
-Par exemple, il faut savoir que lors de l'examen, sur Windows il faut utiliser ctrl+insert pour copier et shift+insert (ou clic droit coller) pour coller. 
+Par exemple, sur Windows il faut utiliser ctrl+insert pour copier et shift+insert (ou clic droit coller) pour coller. 
 - Le temps restant n'est pas affiché précisément. 
 Il apparaît sous la forme d'une barre de progression qui décroît et change de couleur : verte puis orange et enfin rouge. 
 L'examinateur vous indiquera dans le chat quand il vous restera 1 h, 30 min et 10 min.
@@ -508,4 +508,4 @@ Ne pas céder au stress et bien choisir les questions en fonction du pourcentage
 
 Bon courage si vous souhaitez le passer, je me prépare déjà pour l'étape suivante, la [certification CKA](https://www.cncf.io/certification/cka/) !
 
-N'hésitez pas à partager vos trucs et astuces, ou à échanger avec moi sur Twitter [@thibaultlereste](https://twitter.com/thibaultlereste) !
+N'hésitez pas à partager vos trucs et astuces, ou à échanger avec moi sur Twitter [@thibaultlereste](https://twitter.com/thibaultlereste).
