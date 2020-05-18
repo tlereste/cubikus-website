@@ -2,7 +2,7 @@
 title: "Comment j'ai obtenu la certification Kubernetes CKAD"
 date: 2020-05-18T13:00:00+01:00
 draft: false
-description: "Ma préparation pour réussir la certification Kubernetes CKAD"
+description: "Ma préparation pour réussir l'examen Kubernetes CKAD"
 
 tags: ["kubernetes", "ckad", "cncf", "certification"]
 
